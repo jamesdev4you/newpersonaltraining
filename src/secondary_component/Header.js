@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 export default function Header() {
   return (
-    <Box sx={{ display: "flex", width: "100%", height: "1000px" }}>
+    <Box sx={{ display: "flex", width: "100%", height: "800px" }}>
       <Box
         sx={{
           width: "40%",
