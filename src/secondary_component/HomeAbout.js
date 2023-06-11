@@ -41,7 +41,7 @@ const HomeAbout = () => {
             {" "}
             Online & Individual Personal Trainer in Fareham
           </Typography>
-          <Typography color="white" variant="h6">
+          <Typography color="white" variant="h6" sx={{fontSize: {xl: '20px', lg: '16px'}}}>
             {" "}
             Throughout my fitness journey, I’ve helped hundreds of people to
             improve their relationship with food and their bodies. But more than
@@ -51,7 +51,7 @@ const HomeAbout = () => {
             trainer in Fareham, I want to help you stick with a training
             programme long enough that you see real results.
           </Typography>
-          <Typography color="white" variant="h6">
+          <Typography color="white" variant="h6" sx={{fontSize: {xl: '20px', lg: '16px'}}}>
             {" "}
             Throughout my fitness journey, I’ve helped hundreds of people to
             improve their relationship with food and their bodies. But more than
@@ -71,6 +71,7 @@ const HomeAbout = () => {
             backgroundImage: `url(${PersonalTraining})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
+            backgroundPosition: "right"
           }}
         ></Box>
       </Box>

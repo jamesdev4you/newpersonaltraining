@@ -21,7 +21,7 @@ export default function Header() {
       >
         <Typography
           variant="h3"
-          sx={{ width: "440px", alignText: "left", color: "error.main" }}
+          sx={{ width: "440px", alignText: "left", color: "error.main", fontSize: {lg: '48px', sm: '24px'} }}
         >
           Transform yourself
         </Typography>
@@ -31,11 +31,12 @@ export default function Header() {
             width: "440px",
             alignText: "left",
             color: "#fff",
+            fontSize: {lg: '48px', sm: '24px'}
           }}
         >
           into the Perfect you
         </Typography>
-        <Typography variant="h6" sx={{ width: "440px", color: "#fff" }}>
+        <Typography variant="h6" sx={{ width:{lg: '440px', sm: '200px'}, color: "#fff", fontSize: {lg: '20px', sm: '10px'} }}>
           Providing services in Yoga, Body Building, Personal Training, and
           Nutrition
         </Typography>

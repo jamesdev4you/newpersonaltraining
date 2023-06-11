@@ -44,7 +44,6 @@ const HomeOptions = () => {
         sx={{
           height: "400px",
           width: "100%",
-
           display: "flex",
           flexDirection: "column",
           justifyContent: "start",
@@ -75,8 +74,7 @@ const HomeOptions = () => {
       <Box
         sx={{
           height: "550px",
-          width: "80%",
-
+          width: {lg: "80%", sm: "90%"},
           display: "flex",
           alignItems: "start",
           justifyContent: "space-around",
@@ -86,7 +84,7 @@ const HomeOptions = () => {
           <Box
             sx={{
               height: "550px",
-              width: "27%",
+              width: {lg: "31%", sm: "30%"},
               zIndex: "1",
 
               paddingTop: "50px",
@@ -104,7 +102,7 @@ const HomeOptions = () => {
             <Typography align="center" variant="h4">
               {item.title}
             </Typography>
-            <Typography align="center" variant="h6" sx={{ padding: "10px" }}>
+            <Typography align="center" variant="h6" sx={{ padding: "10px", fontSize: {xl: '20px', lg: '18px'} }}>
               {item.desc}
             </Typography>
             <WhiteButton variant="outlined" pill>
