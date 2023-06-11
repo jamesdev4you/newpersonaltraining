@@ -5,7 +5,7 @@ import PersonalTraining from "../assets/personaltraining.jpg";
 
 const HomeTestimonial = () => {
   return (
-    <Box sx={{ height: "1500px", width: "100%" }}>
+    <Box sx={{ height: "1350px", width: "100%" }}>
       <Box
         sx={{
           width: "70%",
@@ -129,12 +129,38 @@ const HomeTestimonial = () => {
             <Box sx={{width: "48.4%",
             height: "200px",
             backgroundColor: 'white', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
-
             </Box>
             <Box sx={{width: "48.4%",
             height: "200px",
             backgroundColor: 'white', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
-
+            </Box>
+          </Box>
+          <Box    
+        sx={{
+            display: "flex",
+            width: '100%',
+            height: "250px",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "30px",
+            backgroundColor: 'white'
+          }}>
+            <Box sx={{width: "21.5%",
+            height: "200px",
+            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            </Box>
+            <Box sx={{width: "21.5%",
+            height: "200px",
+            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            </Box>
+            <Box sx={{width: "21.5%",
+            height: "200px",
+            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            </Box>
+            <Box sx={{width: "21.5%",
+            height: "200px",
+            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
             </Box>
           </Box>
     </Box>

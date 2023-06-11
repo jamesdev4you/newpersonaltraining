@@ -3,6 +3,9 @@ import Box from "@mui/material/Box";
 import { Button } from "../custom_components/Styled";
 import Header2 from "../assets/header.jpg";
 import Typography from "@mui/material/Typography";
+import '../index.css';
+
+
 
 export default function Header() {
   return (
@@ -21,13 +24,14 @@ export default function Header() {
       >
         <Typography
           variant="h3"
-          sx={{ width: "440px", alignText: "left", color: "error.main", fontSize: {lg: '48px', sm: '24px'} }}
+          sx={{ fontFamily: 'Ubuntu', width: "440px", alignText: "left", color: "error.main", fontSize: {lg: '48px', sm: '24px'} }}
         >
           Transform yourself
         </Typography>
         <Typography
           variant="h3"
           sx={{
+            fontFamily: 'Ubuntu',
             width: "440px",
             alignText: "left",
             color: "#fff",
@@ -36,7 +40,7 @@ export default function Header() {
         >
           into the Perfect you
         </Typography>
-        <Typography variant="h6" sx={{ width:{lg: '440px', sm: '200px'}, color: "#fff", fontSize: {lg: '20px', sm: '10px'} }}>
+        <Typography variant="h6" sx={{ fontFamily: 'Ubuntu', width:{lg: '380px', sm: '150px'}, color: "#fff", fontSize: {lg: '20px', sm: '10px'} }}>
           Providing services in Yoga, Body Building, Personal Training, and
           Nutrition
         </Typography>
