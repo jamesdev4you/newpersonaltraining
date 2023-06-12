@@ -5,6 +5,7 @@ import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import NoFoodIcon from "@mui/icons-material/NoFood";
 import { WhiteButton } from "../custom_components/Styled";
+import '../index.css';
 
 const Options = [
   {
@@ -14,8 +15,8 @@ const Options = [
   },
   {
     logo: <FitnessCenterIcon sx={{ width: "100px", height: "100px" }} />,
-    title: "Get toned or big",
-    desc: "Weightlifting provides a range of advantages, including increased muscular strength, improved bone density, enhanced metabolic function, a heightened body composition. and increased confidence. ",
+    title: "Get Massive",
+    desc: "Weightlifting provides a range of advantages, including increased muscular strength, improved bone density, enhanced metabolic function, and a heightened body composition. ",
   },
   {
     logo: <NoFoodIcon sx={{ width: "100px", height: "100px" }} />,
@@ -49,20 +50,20 @@ const HomeOptions = () => {
           justifyContent: "start",
           alignItems: "center",
           gap: "20px",
-          marginBottom: "100px",
+          marginBottom: "50px",
         }}
       >
-        <Typography variant="h3" align="center" sx={{ width: "50%" }}>
+        <Typography variant="h3" align="center" sx={{ fontFamily: "Ubuntu",width: "50%" }}>
           Achieve Greatness
         </Typography>
         <Typography
           variant="h3"
           align="center"
-          sx={{ width: "50%", color: "error.dark" }}
+          sx={{ fontFamily: "Ubuntu", width: "60%", color: "error.dark" }}
         >
           Personal Training in Westchase
         </Typography>
-        <Typography variant="h5" align="center" sx={{ width: "50%" }}>
+        <Typography variant="h5" align="center" sx={{ fontFamily: "Normal",width: "60%" }}>
           Welcome to Edvania PT, your ultimate destination for achieving your
           fitness goals and embracing a healthier lifestyle. Whether you're
           determined to shed those extra pounds, tone your body, build lean
@@ -99,13 +100,13 @@ const HomeOptions = () => {
             }}
           >
             {item.logo}
-            <Typography align="center" variant="h4">
+            <Typography align="center" variant="h4" sx={{fontFamily: "Ubuntu"}}>
               {item.title}
             </Typography>
-            <Typography align="center" variant="h6" sx={{ padding: "10px", fontSize: {xl: '20px', lg: '18px'} }}>
+            <Typography align="center" variant="h6" sx={{ fontFamily: "Normal", padding: "10px", fontSize: {xl: '20px', lg: '16px'} }}>
               {item.desc}
             </Typography>
-            <WhiteButton variant="outlined" pill>
+            <WhiteButton variant="outlined" pill >
               {" "}
               Learn More
             </WhiteButton>

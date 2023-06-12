@@ -12,7 +12,7 @@ export default function Header() {
     <Box sx={{ display: "flex", width: "100%", height: "800px" }}>
       <Box
         sx={{
-          width: "40%",
+          width: "50%",
           height: "100%",
           backgroundColor: "black",
           display: "flex",
@@ -24,7 +24,7 @@ export default function Header() {
       >
         <Typography
           variant="h3"
-          sx={{ fontFamily: 'Ubuntu', width: "440px", alignText: "left", color: "error.main", fontSize: {lg: '48px', sm: '24px'} }}
+          sx={{ fontFamily: 'Ubuntu', width: "440px", alignText: "left", color: "error.main", fontSize: {lg: '40px', sm: '24px'} }}
         >
           Transform yourself
         </Typography>
@@ -35,26 +35,28 @@ export default function Header() {
             width: "440px",
             alignText: "left",
             color: "#fff",
-            fontSize: {lg: '48px', sm: '24px'}
+            fontSize: {lg: '40px', sm: '24px'}
           }}
         >
           into the Perfect you
         </Typography>
-        <Typography variant="h6" sx={{ fontFamily: 'Ubuntu', width:{lg: '380px', sm: '150px'}, color: "#fff", fontSize: {lg: '20px', sm: '10px'} }}>
+        <Typography variant="h6" sx={{ fontFamily: 'Ubuntu', width:{lg: '380px', sm: '150px'}, color: "#fff", fontSize: {lg: '16px', sm: '10px'} }}>
           Providing services in Yoga, Body Building, Personal Training, and
           Nutrition
         </Typography>
-        <Button variant="outlined" pill>
+        <Button variant="outlined" pill >
           Learn more
         </Button>
       </Box>
       <Box
         sx={{
-          width: "60%",
+          width: "50%",
           height: "100%",
           backgroundImage: `url(${Header2})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          backgroundPosition: 'right',
+          filter: 'grayscale()'
         }}
       ></Box>
     </Box>

@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import PersonalTraining from "../assets/personaltraining.jpg";
+import '../index.css';
 
 const HomeTestimonial = () => {
   return (
@@ -25,8 +26,8 @@ const HomeTestimonial = () => {
             marginBottom: '50px'
           }}
         >
-          <Typography variant="h3">The Results You Can Expect</Typography>
-          <Typography variant="h5">
+          <Typography variant="h3" sx={{fontFamily: "Ubuntu", color: "error.dark"}}>The Results You Can Expect</Typography>
+          <Typography variant="h5" sx={{fontFamily: "Normal"}}>
             The Armoury would be nothing without the men and women that have put
             their trust in us over the last 10 years, and working together we've
             had the privilege of seeing some truly tremendous accomplishments.
@@ -34,7 +35,7 @@ const HomeTestimonial = () => {
             beach after having their first child, fitting into the suit they
             always imagined they'd wear for their daughters wedding, or the
             everyday confidence that permeates everything they do, installed
-            through the effort they've put in at the studio.{" "}
+            through the effort they've put in.{" "}
           </Typography>
         </Box>
         <Box    
