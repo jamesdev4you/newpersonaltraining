@@ -9,7 +9,7 @@ import '../index.css';
 
 export default function HomeContact() {
     return (
-    <Box sx={{width: '100%', height: '300px', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyCotent: 'center', alignItems: 'center'}}>
+    <Box sx={{width: '100%', height: '500px', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyCotent: 'center', alignItems: 'center'}}>
         <Box sx={{width: '80%', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
             <Typography sx={{fontSize: '36px', fontFamily: 'Ubuntu', color: 'gold'}}> Let's Connect!</Typography>
         </Box>

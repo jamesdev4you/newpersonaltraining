@@ -128,12 +128,20 @@ const HomeTestimonial = () => {
             backgroundColor: 'white'
           }}>
             <Box sx={{width: "48.4%",
-            height: "200px",
+            height: "180px",
+            padding: '10px',
             backgroundColor: 'white', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ❝  Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
             </Box>
             <Box sx={{width: "48.4%",
-            height: "200px",
+            height: "180px",
+            padding: '10px',
             backgroundColor: 'white', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ❝  Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
             </Box>
           </Box>
           <Box    
@@ -149,19 +157,32 @@ const HomeTestimonial = () => {
           }}>
             <Box sx={{width: "21.5%",
             height: "200px",
-            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            backgroundColor: 'black', padding: '5px', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Normal", color:'white' }}> ❝Just wanted to share a quick note and let you know that you guys do a really good job.❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu",  color:'white' }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
+            </Box>
+            
+            <Box sx={{width: "21.5%",
+            height: "200px",
+            backgroundColor: 'black', padding: '5px', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Normal", color:'white' }}> ❝Just wanted to share a quick note and let you know that you guys do a really good job.❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu",  color:'white' }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
             </Box>
             <Box sx={{width: "21.5%",
             height: "200px",
-            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            backgroundColor: 'black', padding: '5px', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Normal", color:'white' }}> ❝Just wanted to share a quick note and let you know that you guys do a really good job.❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu",  color:'white' }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
             </Box>
             <Box sx={{width: "21.5%",
             height: "200px",
-            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
-            </Box>
-            <Box sx={{width: "21.5%",
-            height: "200px",
-            backgroundColor: 'black', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            backgroundColor: 'black', padding: '5px', border: '1px solid black', borderRadius: '15px', boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",}}>
+            <Typography sx={{fontSize: '18px', fontFamily: "Normal", color:'white' }}> ❝Just wanted to share a quick note and let you know that you guys do a really good job.❞</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu",  color:'white' }}> - James Boyle</Typography>
+            <Typography sx={{fontSize: '18px', fontFamily: "Ubuntu" }}> ⭐⭐⭐⭐⭐</Typography>
             </Box>
           </Box>
     </Box>
