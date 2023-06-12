@@ -5,7 +5,7 @@ import '../index.css';
 export const Button = styled(MuiButton)(({ theme, pill }) => ({
   borderRadius: pill ? theme.shape.pillRadius : theme.shape.borderRadius,
   color: "#fff",
-  border: "#fff 3px solid",
+  border: "#fff 1px solid",
   "&:hover": {
     color: "#fff",
     border: "#fff 3px solid",

@@ -3,6 +3,7 @@ import './index.css';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "./primary_component/Menu";
 import Home from "./primary_component/Home";
+import Footer from "./primary_component/Footer";
 
 const theme = createTheme({
   shape: {
@@ -22,6 +23,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Menu />
       <Home />
+      <Footer/>
     </ThemeProvider>
   );
 }
