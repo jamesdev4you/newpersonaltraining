@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css';
+import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "./primary_component/Menu";
 import Home from "./primary_component/Home";
@@ -10,9 +10,9 @@ const theme = createTheme({
     pillRadius: 50,
   },
   palette: {
-    primary: { main: "#000000" },
+    primary: { main: "#002672" },
     secondary: {
-      main: "#fff",
+      main: "#002672",
     },
     error: { main: "#ffd700" },
   },
@@ -23,7 +23,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Menu />
       <Home />
-      <Footer/>
+      <Footer />
     </ThemeProvider>
   );
 }

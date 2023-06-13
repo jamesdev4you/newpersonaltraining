@@ -18,7 +18,7 @@ export default function Header() {
         sx={{
           width: "50%",
           height: "100%",
-          backgroundColor: "black",
+          backgroundColor: "primary.dark",
           display: "flex",
           flexDirection: "column",
           paddingLeft: "70px",

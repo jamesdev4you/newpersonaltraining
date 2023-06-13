@@ -6,7 +6,9 @@ import "../index.css";
 
 const HomeTestimonial = () => {
   return (
-    <Box sx={{ height: "1500px", width: "100%" }}>
+    <Box
+      sx={{ height: "1500px", width: "100%", backgroundColor: "primary.light" }}
+    >
       <Box
         sx={{
           width: "70%",
@@ -14,6 +16,7 @@ const HomeTestimonial = () => {
           margin: "auto",
           display: "flex",
           flexDirection: "column",
+          backgroundColor: "primary.light",
         }}
       >
         {" "}
@@ -24,6 +27,7 @@ const HomeTestimonial = () => {
             alignItems: "center",
             gap: "50px",
             marginBottom: "50px",
+            backgroundColor: "primary.light",
           }}
         >
           <Typography
@@ -51,6 +55,7 @@ const HomeTestimonial = () => {
             alignItems: "center",
             justifyContent: "center",
             gap: "30px",
+            backgroundColor: "primary.light",
           }}
         >
           <Box
@@ -62,6 +67,7 @@ const HomeTestimonial = () => {
               alignItems: "start",
               justifyContent: "space-between",
               gap: "30px",
+              backgroundColor: "primary.light",
             }}
           >
             <Box
@@ -95,6 +101,7 @@ const HomeTestimonial = () => {
               gap: "30px",
 
               height: { xl: "500px", lg: "300px" },
+              backgroundColor: "primary.light",
             }}
           >
             <Box
@@ -128,7 +135,7 @@ const HomeTestimonial = () => {
             alignItems: "center",
             justifyContent: "space-between",
             gap: "30px",
-            backgroundColor: "white",
+            backgroundColor: "primary.light",
           }}
         >
           <Box
@@ -168,7 +175,7 @@ const HomeTestimonial = () => {
               width: "48.4%",
               height: "180px",
               padding: "10px",
-              backgroundColor: "white",
+
               border: "1px solid black",
               borderRadius: "15px",
               boxShadow:
@@ -178,6 +185,7 @@ const HomeTestimonial = () => {
               alignItems: "start",
               flexDirection: "column",
               gap: "5px",
+              backgroundColor: "white",
             }}
           >
             <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
@@ -205,7 +213,7 @@ const HomeTestimonial = () => {
             alignItems: "center",
             justifyContent: "space-between",
             gap: "30px",
-            backgroundColor: "white",
+            backgroundColor: "primary.light",
           }}
         >
           <Box

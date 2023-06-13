@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Logo from "../assets/logo.png";
-import '../index.css';
+import "../index.css";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Services", "Testimonials", "Contact"];
@@ -30,12 +30,14 @@ export default function Menu() {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center", backgroundColor: "primary.main" }}
     >
-      <img src={Logo} alt="yooo"style={{ height: "75px", width: "150px" }} />
+      <img src={Logo} alt="yooo" style={{ height: "75px", width: "150px" }} />
       <Divider sx={{ backgroundColor: "primary.main" }} />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center", color: "#fff", fontFamily: 'Ubuntu' }}>
+            <ListItemButton
+              sx={{ textAlign: "center", color: "#fff", fontFamily: "Ubuntu" }}
+            >
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -63,8 +65,8 @@ export default function Menu() {
             alt="yooo"
             style={{
               display: { xs: "none", sm: "block" },
-              height: "70px",
-              width: "150px",
+              height: "75px",
+              width: "85px",
             }}
           />
           <Box

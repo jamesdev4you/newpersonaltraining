@@ -13,7 +13,7 @@ export default function HomeContact() {
       sx={{
         width: "100%",
         height: "300px",
-        backgroundColor: "black",
+        backgroundColor: "primary.dark",
         display: "flex",
         flexDirection: "column",
         justifyCotent: "center",

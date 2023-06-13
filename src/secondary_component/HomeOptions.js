@@ -5,7 +5,7 @@ import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import NoFoodIcon from "@mui/icons-material/NoFood";
 import { WhiteButton } from "../custom_components/Styled";
-import '../index.css';
+import "../index.css";
 
 const Options = [
   {
@@ -37,10 +37,16 @@ const HomeOptions = () => {
         flexDirection: "column",
         justifyContent: "start",
         alignItems: "center",
-        background: "linear-gradient(to bottom, white 90%, black 10%)",
+        background: "linear-gradient(to bottom, #33518E 90%, #001A4F 10%)",
       }}
     >
-      <Box sx={{ height: "300px", width: "100%" }}></Box>
+      <Box
+        sx={{
+          height: "300px",
+          width: "100%",
+          backgroundColor: "primary.light",
+        }}
+      ></Box>
       <Box
         sx={{
           height: "400px",
@@ -51,9 +57,14 @@ const HomeOptions = () => {
           alignItems: "center",
           gap: "20px",
           marginBottom: "50px",
+          backgroundColor: "primary.light",
         }}
       >
-        <Typography variant="h3" align="center" sx={{ fontFamily: "Ubuntu",width: "50%" }}>
+        <Typography
+          variant="h3"
+          align="center"
+          sx={{ fontFamily: "Ubuntu", width: "50%" }}
+        >
           Achieve Greatness
         </Typography>
         <Typography
@@ -63,7 +74,11 @@ const HomeOptions = () => {
         >
           Personal Training in Westchase
         </Typography>
-        <Typography variant="h5" align="center" sx={{ fontFamily: "Normal",width: "60%" }}>
+        <Typography
+          variant="h5"
+          align="center"
+          sx={{ fontFamily: "Normal", width: "60%" }}
+        >
           Welcome to Edvania PT, your ultimate destination for achieving your
           fitness goals and embracing a healthier lifestyle. Whether you're
           determined to shed those extra pounds, tone your body, build lean
@@ -75,7 +90,7 @@ const HomeOptions = () => {
       <Box
         sx={{
           height: "550px",
-          width: {lg: "80%", sm: "90%"},
+          width: { lg: "80%", sm: "90%" },
           display: "flex",
           alignItems: "start",
           justifyContent: "space-around",
@@ -85,7 +100,7 @@ const HomeOptions = () => {
           <Box
             sx={{
               height: "550px",
-              width: {lg: "31%", sm: "30%"},
+              width: { lg: "31%", sm: "30%" },
               zIndex: "1",
 
               paddingTop: "50px",
@@ -100,13 +115,25 @@ const HomeOptions = () => {
             }}
           >
             {item.logo}
-            <Typography align="center" variant="h4" sx={{fontFamily: "Ubuntu"}}>
+            <Typography
+              align="center"
+              variant="h4"
+              sx={{ fontFamily: "Ubuntu" }}
+            >
               {item.title}
             </Typography>
-            <Typography align="center" variant="h6" sx={{ fontFamily: "Normal", padding: "10px", fontSize: {xl: '20px', lg: '16px'} }}>
+            <Typography
+              align="center"
+              variant="h6"
+              sx={{
+                fontFamily: "Normal",
+                padding: "10px",
+                fontSize: { xl: "20px", lg: "16px" },
+              }}
+            >
               {item.desc}
             </Typography>
-            <WhiteButton variant="outlined" pill >
+            <WhiteButton variant="outlined" pill>
               {" "}
               Learn More
             </WhiteButton>
