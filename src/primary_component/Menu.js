@@ -14,9 +14,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Logo from "../assets/logo.png";
 import "../index.css";
+import { Outlet } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Services", "Testimonials", "Contact"];
+const navItems = [
+  { text: "Home", href: "/" },
+  { text: "About", href: "/about" },
+  { text: "Services", href: "/services" },
+  { text: "Testimonials", href: "testimonials" },
+  { text: "Contact", href: "/contact" },
+];
 
 export default function Menu() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -34,11 +41,12 @@ export default function Menu() {
       <Divider sx={{ backgroundColor: "primary.main" }} />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.text} disablePadding>
             <ListItemButton
+              to={item.href}
               sx={{ textAlign: "center", color: "#fff", fontFamily: "Ubuntu" }}
             >
-              <ListItemText primary={item} />
+              <ListItemText primary={item.text} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -73,8 +81,12 @@ export default function Menu() {
             sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}
           >
             {navItems.map((item) => (
-              <Button key={item} sx={{ paddingLeft: "25px", color: "#fff" }}>
-                {item}
+              <Button
+                href={item.href}
+                key={item.text}
+                sx={{ paddingLeft: "25px", color: "#fff" }}
+              >
+                {item.text}
               </Button>
             ))}
           </Box>
@@ -100,6 +112,7 @@ export default function Menu() {
           {drawer}
         </Drawer>
       </Box>
+      <Outlet />
     </Box>
   );
 }

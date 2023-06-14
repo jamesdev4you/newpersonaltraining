@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import NoFoodIcon from "@mui/icons-material/NoFood";
-import { WhiteButton } from "../custom_components/Styled";
+import { Button } from "../custom_components/Styled";
 import "../index.css";
 
 const Options = [
@@ -16,7 +16,7 @@ const Options = [
   {
     logo: <FitnessCenterIcon sx={{ width: "100px", height: "100px" }} />,
     title: "Get Massive",
-    desc: "Weightlifting provides a range of advantages, including increased muscular strength, improved bone density, enhanced metabolic function, and a heightened body composition. ",
+    desc: "Weightlifting provides a range of advantages, including increased muscular strength, improved bone density, enhanced metabolic function, a heightened body composition, and increased confidence. ",
   },
   {
     logo: <NoFoodIcon sx={{ width: "100px", height: "100px" }} />,
@@ -63,21 +63,21 @@ const HomeOptions = () => {
         <Typography
           variant="h3"
           align="center"
-          sx={{ fontFamily: "Ubuntu", width: "50%" }}
+          sx={{ fontFamily: "Ubuntu", width: "50%", color: "white" }}
         >
           Achieve Greatness
         </Typography>
         <Typography
           variant="h3"
           align="center"
-          sx={{ fontFamily: "Ubuntu", width: "60%", color: "error.dark" }}
+          sx={{ fontFamily: "Ubuntu", width: "60%", color: "error.main" }}
         >
           Personal Training in Westchase
         </Typography>
         <Typography
           variant="h5"
           align="center"
-          sx={{ fontFamily: "Normal", width: "60%" }}
+          sx={{ fontFamily: "Ubuntu", width: "60%", color: "white" }}
         >
           Welcome to Edvania PT, your ultimate destination for achieving your
           fitness goals and embracing a healthier lifestyle. Whether you're
@@ -100,7 +100,7 @@ const HomeOptions = () => {
           <Box
             sx={{
               height: "550px",
-              width: { lg: "31%", sm: "30%" },
+              width: { lg: "28%", sm: "30%" },
               zIndex: "1",
 
               paddingTop: "50px",
@@ -109,7 +109,8 @@ const HomeOptions = () => {
               flexDirection: "column",
               alignItems: "center",
               border: "1px solid grey",
-              backgroundColor: "white",
+              backgroundColor: "black",
+              color: "white",
               boxShadow:
                 "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
             }}
@@ -118,7 +119,7 @@ const HomeOptions = () => {
             <Typography
               align="center"
               variant="h4"
-              sx={{ fontFamily: "Ubuntu" }}
+              sx={{ fontFamily: "Ubuntu", color: "white" }}
             >
               {item.title}
             </Typography>
@@ -127,16 +128,17 @@ const HomeOptions = () => {
               variant="h6"
               sx={{
                 fontFamily: "Normal",
-                padding: "10px",
+                padding: "20px",
                 fontSize: { xl: "20px", lg: "16px" },
+                color: "white",
               }}
             >
               {item.desc}
             </Typography>
-            <WhiteButton variant="outlined" pill>
+            <Button variant="outlined" pill>
               {" "}
               Learn More
-            </WhiteButton>
+            </Button>
           </Box>
         ))}
       </Box>

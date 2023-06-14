@@ -32,11 +32,14 @@ const HomeTestimonial = () => {
         >
           <Typography
             variant="h3"
-            sx={{ fontFamily: "Ubuntu", color: "error.dark" }}
+            sx={{ fontFamily: "Ubuntu", color: "error.main" }}
           >
             The Results You Can Expect
           </Typography>
-          <Typography variant="h5" sx={{ fontFamily: "Normal" }}>
+          <Typography
+            variant="h5"
+            sx={{ fontFamily: "Normal", color: "white" }}
+          >
             The Armoury would be nothing without the men and women that have put
             their trust in us over the last 10 years, and working together we've
             had the privilege of seeing some truly tremendous accomplishments.
@@ -143,7 +146,7 @@ const HomeTestimonial = () => {
               width: "48.4%",
               height: "180px",
               padding: "10px",
-              backgroundColor: "white",
+              backgroundColor: "primary.dark",
               border: "1px solid black",
               borderRadius: "15px",
               boxShadow:
@@ -155,17 +158,23 @@ const HomeTestimonial = () => {
               gap: "5px",
             }}
           >
-            <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "Ubuntu", color: "white" }}
+            >
               {" "}
               ❝ Just wanted to share a quick note and let you know that you guys
               do a really good job. I'm glad I decided to work with you. I never
               have any problem at all. ❞
             </Typography>
-            <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "Ubuntu", color: "white" }}
+            >
               {" "}
               - James Boyle
             </Typography>
-            <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "Ubuntu", color: "white" }}
+            >
               {" "}
               ⭐⭐⭐⭐⭐
             </Typography>
@@ -185,16 +194,20 @@ const HomeTestimonial = () => {
               alignItems: "start",
               flexDirection: "column",
               gap: "5px",
-              backgroundColor: "white",
+              backgroundColor: "primary.dark",
             }}
           >
-            <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "Ubuntu", color: "white" }}
+            >
               {" "}
               ❝ Just wanted to share a quick note and let you know that you guys
               do a really good job. I'm glad I decided to work with you. I never
               have any problem at all. ❞
             </Typography>
-            <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "Ubuntu", color: "white" }}
+            >
               {" "}
               - James Boyle
             </Typography>
