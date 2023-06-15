@@ -21,7 +21,7 @@ const navItems = [
   { text: "Home", href: "/" },
   { text: "About", href: "/about" },
   { text: "Services", href: "/services" },
-  { text: "Testimonials", href: "testimonials" },
+  { text: "Testimonials", href: "/testimonials" },
   { text: "Contact", href: "/contact" },
 ];
 

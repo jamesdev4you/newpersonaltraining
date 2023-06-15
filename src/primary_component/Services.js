@@ -6,6 +6,7 @@ import Header from "../secondary_component/Header";
 import AboutQuote from "../secondary_component/AboutQuote";
 import AboutTestimonial from "../secondary_component/AboutTestimonial";
 import HomeContact from "../secondary_component/HomeContact";
+import { Link } from "react-router-dom";
 import { Button } from "../custom_components/Styled";
 import "../index.css";
 
@@ -59,7 +60,7 @@ const Services = () => {
                 fontFamily: "Ubuntu",
               }}
             >
-              Strength Training
+              Yoga
             </Typography>
             <Typography
               sx={{
@@ -138,7 +139,13 @@ const Services = () => {
                 </Typography>
               </li>
             </ul>
-            <Button sx={{ margin: "30px auto auto auto" }}>Start Now</Button>
+            <Button
+              component={Link}
+              sx={{ margin: "30px auto auto auto" }}
+              to="/yoga"
+            >
+              Start Now
+            </Button>
           </Box>
           <Box
             sx={{
@@ -247,7 +254,13 @@ const Services = () => {
                 </Typography>
               </li>
             </ul>
-            <Button sx={{ margin: "30px auto auto auto" }}>Start Now</Button>
+            <Button
+              component={Link}
+              sx={{ margin: "30px auto auto auto" }}
+              to="/personaltraining"
+            >
+              Start Now
+            </Button>
           </Box>
           <Box
             sx={{
@@ -277,7 +290,7 @@ const Services = () => {
                 fontFamily: "Ubuntu",
               }}
             >
-              Strength Training
+              Nutrition
             </Typography>
             <Typography
               sx={{
@@ -356,7 +369,13 @@ const Services = () => {
                 </Typography>
               </li>
             </ul>
-            <Button sx={{ margin: "30px auto auto auto" }}>Start Now</Button>
+            <Button
+              component={Link}
+              sx={{ margin: "30px auto auto auto" }}
+              to="/nutrition"
+            >
+              Start Now
+            </Button>
           </Box>
         </Box>
       </Box>
