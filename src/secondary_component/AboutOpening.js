@@ -11,27 +11,44 @@ const AboutOpening = () => {
       sx={{
         display: "flex",
         width: "100%",
-        height: { xl: "1100px", lg: "800px" },
+        height: "auto",
         backgroundColor: "primary.light",
-        alignItems: "center",
+        flexWrap: "wrap",
+        alignItems: "start",
         justifyContent: "center",
-        paddingTop: "100px",
+        padding: "100px 0",
       }}
     >
       <Box
         sx={{
           height: "100%",
           borderRadius: "50%",
-          width: "30%",
+          width: {
+            xl: "40%",
+            lg: "40%",
+            md: "40%",
+            sm: "100%",
+            xs: "100%",
+          },
           display: "flex",
+
           justifyContent: "start",
           flexDirection: "column",
+
           gap: "50px",
+          paddingBottom: "100px",
         }}
       >
         <Typography
           sx={{
-            fontSize: "38px",
+            fontSize: {
+              xl: "50px",
+              lg: "30px",
+              md: "34px",
+              sm: "34px",
+              xs: "24px",
+            },
+            margin: "auto",
             textAlign: "center",
             width: "100%",
             color: "white",
@@ -43,9 +60,21 @@ const AboutOpening = () => {
 
         <Box
           sx={{
-            height: "420px",
+            height: {
+              xl: "420px",
+              lg: "350px",
+              md: "250px",
+              sm: "250px",
+              xs: "250px",
+            },
             borderRadius: "50%",
-            width: "420px",
+            width: {
+              xl: "420px",
+              lg: "350px",
+              md: "250px",
+              sm: "250px",
+              xs: "250px",
+            },
             margin: "0px auto",
             backgroundImage: `url(${Header})`,
             backgroundRepeat: "no-repeat",
@@ -61,14 +90,26 @@ const AboutOpening = () => {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          width: "50%",
-          marginLeft: "50px",
+          width: {
+            xl: "50%",
+            lg: "50%",
+            md: "50%",
+            sm: "90%",
+            xs: "90%",
+          },
+          margin: "auto",
           gap: "30px",
         }}
       >
         <Typography
           sx={{
-            fontSize: "38px",
+            fontSize: {
+              xl: "50px",
+              lg: "30px",
+              md: "34px",
+              sm: "34px",
+              xs: "24px",
+            },
             textAlign: "left",
             width: "100%",
             color: "white",
@@ -79,7 +120,13 @@ const AboutOpening = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "24px",
+            fontSize: {
+              xl: "20px",
+              lg: "20px",
+              md: "16px",
+              sm: "16px",
+              xs: "16px",
+            },
             textAlign: "left",
             width: "100%",
             color: "white",
@@ -94,7 +141,13 @@ const AboutOpening = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "24px",
+            fontSize: {
+              xl: "20px",
+              lg: "20px",
+              md: "16px",
+              sm: "16px",
+              xs: "16px",
+            },
             textAlign: "left",
             width: "100%",
             color: "white",
@@ -108,7 +161,13 @@ const AboutOpening = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "24px",
+            fontSize: {
+              xl: "20px",
+              lg: "20px",
+              md: "16px",
+              sm: "16px",
+              xs: "16px",
+            },
             textAlign: "left",
             width: "100%",
             color: "white",
@@ -127,7 +186,13 @@ const AboutOpening = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "24px",
+            fontSize: {
+              xl: "20px",
+              lg: "20px",
+              md: "16px",
+              sm: "16px",
+              xs: "16px",
+            },
             textAlign: "left",
             width: "100%",
             color: "white",

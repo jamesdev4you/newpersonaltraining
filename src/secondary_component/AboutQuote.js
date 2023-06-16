@@ -6,23 +6,42 @@ const AboutQuote = () => {
   return (
     <Box
       sx={{
-        height: "300px",
+        height: "auto",
         width: "100%",
         backgroundColor: "primary.dark",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        padding: {
+          xl: "50px 0",
+          lg: "50px 0",
+          md: "50px 0",
+          sm: "30px 0",
+          xs: "20px 0",
+        },
       }}
     >
       <Typography
         sx={{
-          width: "50%",
+          width: {
+            xl: "70%",
+            lg: "70%",
+            md: "70%",
+            sm: "90%",
+            xs: "98%",
+          },
 
           fontFamily: "Ubuntu",
           color: "error.main",
           textAlign: "center",
-          fontSize: "34px",
+          fontSize: {
+            xl: "38px",
+            lg: "30px",
+            md: "26px",
+            sm: "24px",
+            xs: "20px",
+          },
         }}
       >
         "Mind over matter – focus your mind, your body will follow and you’ll be
@@ -35,7 +54,13 @@ const AboutQuote = () => {
           fontFamily: "Ubuntu",
           color: "white",
           textAlign: "center",
-          fontSize: "28px",
+          fontSize: {
+            xl: "38px",
+            lg: "30px",
+            md: "26px",
+            sm: "24px",
+            xs: "20px",
+          },
         }}
       >
         - Edvania

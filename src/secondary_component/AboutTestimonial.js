@@ -13,19 +13,25 @@ const AboutTestimonial = () => {
       sx={{
         display: "flex",
         width: "100%",
-        height: { xl: "1400px", lg: "800px" },
+        height: "auto",
         backgroundColor: "primary.light",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
-        paddingTop: "50px",
+        padding: "50px 0",
       }}
     >
       <Typography
         sx={{
-          fontSize: "38px",
+          fontSize: {
+            xl: "50px",
+            lg: "30px",
+            md: "34px",
+            sm: "34px",
+            xs: "24px",
+          },
           textAlign: "center",
-          width: "100%",
+          width: "90%",
           color: "white",
         }}
       >
@@ -33,9 +39,21 @@ const AboutTestimonial = () => {
       </Typography>
       <Typography
         sx={{
-          fontSize: "24px",
+          fontSize: {
+            xl: "28px",
+            lg: "26px",
+            md: "22px",
+            sm: "20px",
+            xs: "18px",
+          },
           textAlign: "center",
-          width: "60%",
+          width: {
+            xl: "80%",
+            lg: "80%",
+            md: "80%",
+            sm: "95%",
+            xs: "95%",
+          },
           color: "white",
           marginTop: "50px",
         }}
@@ -50,22 +68,54 @@ const AboutTestimonial = () => {
       <Box
         sx={{
           display: "flex",
-          width: "60%",
-          height: "60%",
+          width: {
+            xl: "80%",
+            lg: "80%",
+            md: "80%",
+            sm: "100%",
+            xs: "100%",
+          },
+          height: {
+            xl: "800px",
+            lg: "640px",
+            md: "640px",
+            sm: "640px",
+            xs: "1300px",
+          },
           flexWrap: "wrap",
-          flexDirection: "column",
+          flexDirection: {
+            xl: "column",
+            lg: "column",
+            md: "column",
+            sm: "row",
+            xs: "row",
+          },
+
           alignItems: "center",
-          justifyContent: "start",
-          paddingTop: "50px",
+          justifyContent: "center",
+
           rowGap: "5px",
+          columnGap: "5px",
         }}
       >
         {aboutPictures.map((item) => {
           return (
             <Box
               sx={{
-                width: "33%",
-                height: "45%",
+                width: {
+                  xl: "33%",
+                  lg: "33%",
+                  md: "33%",
+                  sm: "48%",
+                  xs: "95%",
+                },
+                height: {
+                  xl: "45%",
+                  lg: "45%",
+                  md: "45%",
+                  sm: "33%",
+                  xs: "200px",
+                },
                 backgroundImage: `url(${Header})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
@@ -77,12 +127,24 @@ const AboutTestimonial = () => {
       </Box>
       <Typography
         sx={{
-          fontSize: "24px",
+          fontSize: {
+            xl: "28px",
+            lg: "26px",
+            md: "22px",
+            sm: "20px",
+            xs: "18px",
+          },
           textAlign: "center",
-          width: "60%",
+          width: {
+            xl: "80%",
+            lg: "80%",
+            md: "80%",
+            sm: "95%",
+            xs: "95%",
+          },
           color: "white",
 
-          marginBottom: "20px",
+          margin: "20px 0",
         }}
       >
         At RCotterill PT, I want to help men and women that have felt like
