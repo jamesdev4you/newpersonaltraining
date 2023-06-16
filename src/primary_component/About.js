@@ -5,10 +5,10 @@ import AboutQuote from "../secondary_component/AboutQuote";
 import AboutTestimonial from "../secondary_component/AboutTestimonial";
 import "../index.css";
 
-const About = () => {
+const About = (props) => {
   return (
     <div>
-      <Header />
+      <Header headerOp={props.headerOp} />
       <AboutOpening />
       <AboutQuote />
       <AboutTestimonial />

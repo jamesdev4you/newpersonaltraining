@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Header2 from "../assets/header.jpg";
@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 import { Button } from "../custom_components/Styled";
 import "../index.css";
 
-const Services = () => {
+const Services = (props) => {
   return (
     <>
-      <Header />
+      <Header headerOp={props.headerOp} />
       <Box
         sx={{
           width: "100%",

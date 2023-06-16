@@ -4,10 +4,10 @@ import Typography from "@mui/material/Typography";
 import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
 
-const Testimonials = () => {
+const Testimonials = (props) => {
   return (
     <>
-      <Header />
+      <Header headerOp={props.headerOp} />
       <Box
         sx={{
           width: "100%",

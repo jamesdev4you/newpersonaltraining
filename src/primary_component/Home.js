@@ -4,17 +4,16 @@ import HomeOptions from "../secondary_component/HomeOptions";
 import HomeAbout from "../secondary_component/HomeAbout";
 import HomeTestimonial from "../secondary_component/HomeTestimonial";
 import HomeContact from "../secondary_component/HomeContact";
-import '../index.css';
+import "../index.css";
 
-
-export default function Home() {
+export default function Home(props) {
   return (
-    <div >
-      <Header />
+    <div>
+      <Header headerOp={props.headerOp} />
       <HomeOptions />
       <HomeAbout />
       <HomeTestimonial />
-      <HomeContact/>
+      <HomeContact />
     </div>
   );
 }

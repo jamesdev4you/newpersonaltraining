@@ -1,11 +1,10 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { Button } from "../custom_components/Styled";
-import Header2 from "../assets/header.jpg";
 import Typography from "@mui/material/Typography";
 import "../index.css";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <Box
       sx={{
@@ -36,7 +35,7 @@ export default function Header() {
             fontSize: { xl: "68px", lg: "40px", sm: "24px" },
           }}
         >
-          Transform yourself
+          {props.headerOp.firstSen}
         </Typography>
         <Typography
           variant="h3"
@@ -48,7 +47,7 @@ export default function Header() {
             fontSize: { xl: "68px", lg: "40px", sm: "24px" },
           }}
         >
-          into the Perfect you
+          {props.headerOp.secondSen}
         </Typography>
         <Typography
           variant="h6"
@@ -59,18 +58,17 @@ export default function Header() {
             fontSize: { xl: "28px", lg: "16px", sm: "10px" },
           }}
         >
-          Providing services in Yoga, Body Building, Personal Training, and
-          Nutrition
+          {props.headerOp.thirdParagraph}
         </Typography>
         <Button variant="outlined" pill>
-          Learn more
+          {props.headerOp.buttonSen}
         </Button>
       </Box>
       <Box
         sx={{
           width: "50%",
           height: "100%",
-          backgroundImage: `url(${Header2})`,
+          backgroundImage: `url(${props.headerOp.image})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "right",

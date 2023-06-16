@@ -6,7 +6,37 @@ import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { InlineWidget } from "react-calendly";
 
-const Calendar = () => {
+const Calendar = (props) => {
+  let calendarUrl = "";
+
+  if (props.count === 1) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/nutrition-and-dieting-bronze";
+  } else if (props.count === 2) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/nutrition-and-dieting-silver";
+  } else if (props.count === 3) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/nutrition-and-dieting-gold";
+  } else if (props.count === 4) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/strength-training-bronze";
+  } else if (props.count === 5) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/strength-training-silver";
+  } else if (props.count === 6) {
+    calendarUrl = "https://calendly.com/petersonedvania/strength-training-gold";
+  } else if (props.count === 7) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/yoga-and-flexibility-bronze";
+  } else if (props.count === 8) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/yoga-and-flexibility-silver";
+  } else if (props.count === 9) {
+    calendarUrl =
+      "https://calendly.com/petersonedvania/yoga-and-flexibility-gold";
+  }
+
   return (
     <Box
       sx={{
@@ -18,10 +48,12 @@ const Calendar = () => {
         backgroundColor: "primary.light",
       }}
     >
-      <InlineWidget
-        url="https://calendly.com/petersonedvania"
-        styles={{ width: "50%", height: "700px" }}
-      />
+      {calendarUrl && (
+        <InlineWidget
+          url={calendarUrl}
+          styles={{ width: "50%", height: "700px" }}
+        />
+      )}
     </Box>
   );
 };

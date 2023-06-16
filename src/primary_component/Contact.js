@@ -5,10 +5,10 @@ import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
 import ContactForm from "../secondary_component/ContactForm";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
-      <Header />
+      <Header headerOp={props.headerOp} />
       <Box
         sx={{ height: "800px", width: "100%", backgroundColor: "primary.main" }}
       >
