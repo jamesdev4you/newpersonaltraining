@@ -5,6 +5,8 @@ import { Button } from "../custom_components/Styled";
 import Header from "../assets/header.jpg";
 
 const AboutTestimonial = () => {
+  const aboutPictures = [Header, Header, Header, Header, Header, Header];
+
   return (
     <Box
       sx={{
@@ -54,93 +56,23 @@ const AboutTestimonial = () => {
           alignItems: "center",
           justifyContent: "start",
           paddingTop: "50px",
+          rowGap: "5px",
         }}
       >
-        <Box
-          sx={{
-            width: "100%",
-            height: "50%",
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "start",
-          }}
-        >
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-        </Box>
-        <Box
-          sx={{
-            width: "100%",
-            height: "50%",
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "start",
-            paddingTop: "5px",
-          }}
-        >
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-          <Box
-            sx={{
-              width: "33%",
-              height: "100%",
-              backgroundImage: `url(${Header})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></Box>
-        </Box>
+        {aboutPictures.map((item) => {
+          return (
+            <Box
+              sx={{
+                width: "33%",
+                height: "45%",
+                backgroundImage: `url(${Header})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "right",
+              }}
+            ></Box>
+          );
+        })}
       </Box>
       <Typography
         sx={{
