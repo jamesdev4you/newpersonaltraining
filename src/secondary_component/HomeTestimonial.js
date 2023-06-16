@@ -54,7 +54,7 @@ const HomeTestimonial = () => {
   return (
     <Box
       sx={{
-        height: "1500px",
+        height: "auto",
         width: "100%",
         backgroundColor: "primary.light",
         display: "flex",
@@ -63,8 +63,9 @@ const HomeTestimonial = () => {
     >
       <Box
         sx={{
-          width: "70%",
+          width: "90%",
           paddingTop: "50px",
+          paddingBottom: "50px",
           margin: "auto",
           display: "flex",
           flexDirection: "column",
@@ -74,27 +75,38 @@ const HomeTestimonial = () => {
         {" "}
         <Box
           sx={{
-            marginBottom: "50px",
             backgroundColor: "primary.light",
           }}
         >
           <Typography
-            variant="h3"
             sx={{
               fontFamily: "Ubuntu",
               color: "error.main",
               textAlign: "center",
+              fontSize: {
+                xl: "60px",
+                lg: "50px",
+                md: "50px",
+                sm: "44px",
+                xs: "23px",
+              },
             }}
           >
             The Results You Can Expect
           </Typography>
           <Typography
-            variant="h5"
             sx={{
               fontFamily: "Normal",
               color: "white",
               textAlign: "center",
               padding: "50px 0",
+              fontSize: {
+                xl: "20px",
+                lg: "20px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },
             }}
           >
             The Armoury would be nothing without the men and women that have put
@@ -111,11 +123,12 @@ const HomeTestimonial = () => {
           sx={{
             display: "flex",
             width: "100%",
-            height: "800px",
+            height: "auto",
             flexDirection: "row",
             alignItems: "start",
             justifyContent: "center",
             gap: "30px",
+            flexWrap: "wrap",
           }}
         >
           {beforeAfterTestimonials.map(
@@ -125,39 +138,60 @@ const HomeTestimonial = () => {
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
-                    width: "50%",
-                    height: { xl: "800px" },
+                    width: {
+                      xl: "47%",
+                      lg: "47%",
+                      md: "47%",
+                      sm: "90%",
+                      xs: "90%",
+                    },
+                    height: "auto",
                     flexDirection: "row",
                     alignItems: "start",
                     justifyContent: "space-between",
-                    gap: "30px",
+                    marginBottom: "30px",
                     backgroundColor: "primary.light",
                   }}
                 >
                   <Box
                     sx={{
                       width: "47%",
-                      height: { xl: "500px", lg: "300px" },
+
+                      height: {
+                        xl: "500px",
+                        lg: "300px",
+                        md: "300px",
+                        sm: "300px",
+                        xs: "300px",
+                      },
                       backgroundImage: `url(${before})`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       backgroundPosition: "right",
+                      marginBottom: "15px",
                     }}
                   ></Box>
                   <Box
                     sx={{
                       width: "47%",
-                      height: { xl: "500px", lg: "300px" },
+                      height: {
+                        xl: "500px",
+                        lg: "300px",
+                        md: "300px",
+                        sm: "300px",
+                        xs: "300px",
+                      },
                       backgroundImage: `url(${after})`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       backgroundPosition: "right",
+                      marginBottom: "15px",
                     }}
                   ></Box>
                   <Box
                     sx={{
                       width: "100%",
-                      height: "180px",
+                      height: "auto",
                       padding: "10px",
                       backgroundColor: "primary.dark",
                       border: "1px solid black",
@@ -173,7 +207,13 @@ const HomeTestimonial = () => {
                   >
                     <Typography
                       sx={{
-                        fontSize: "18px",
+                        fontSize: {
+                          xl: "20px",
+                          lg: "20px",
+                          md: "16px",
+                          sm: "16px",
+                          xs: "16px",
+                        },
                         fontFamily: "Ubuntu",
                         color: "white",
                       }}
@@ -207,11 +247,13 @@ const HomeTestimonial = () => {
         <Box
           sx={{
             display: "flex",
+            flexWrap: "wrap",
             width: "100%",
-            height: "200px",
+            height: "auto",
             flexDirection: "row",
-            alignItems: "start",
+            alignItems: "center",
             justifyContent: "center",
+            margin: "auto",
             gap: "30px",
           }}
         >
@@ -219,10 +261,22 @@ const HomeTestimonial = () => {
             return (
               <Box
                 sx={{
-                  width: "24.5%",
-                  height: "200px",
+                  width: {
+                    xl: "23%",
+                    lg: "21%",
+                    md: "45%",
+                    sm: "45%",
+                    xs: "90%",
+                  },
+                  height: {
+                    xl: "200px",
+                    lg: "200px",
+                    md: "auto",
+                    sm: "auto",
+                    xs: "auto",
+                  },
                   backgroundColor: "black",
-                  padding: "5px",
+                  padding: "15px",
                   border: "1px solid black",
                   borderRadius: "15px",
                   boxShadow:

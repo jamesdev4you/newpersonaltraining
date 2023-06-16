@@ -6,20 +6,27 @@ import "../index.css";
 
 export default function Footer() {
   return (
-    <Box sx={{ width: "100%", height: "250px", backgroundColor: "lightgrey" }}>
+    <Box sx={{ width: "100%", height: "auto", backgroundColor: "lightgrey" }}>
       <Box
         sx={{
           width: "90%",
-          height: "100%",
+          height: "auto",
           margin: "auto",
           display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
+          justifyContent: "space-around",
+          alignItems: "start",
+          flexWrap: "wrap",
         }}
       >
         <Box
           sx={{
-            width: "20%",
+            width: {
+              xl: "20%",
+              lg: "20%",
+              md: "50%",
+              sm: "50%",
+              xs: "90%",
+            },
             height: "90%",
             display: "flex",
             flexDirection: "column",
@@ -79,7 +86,13 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            width: "20%",
+            width: {
+              xl: "20%",
+              lg: "20%",
+              md: "50%",
+              sm: "50%",
+              xs: "90%",
+            },
             height: "90%",
             display: "flex",
             flexDirection: "column",
@@ -127,7 +140,13 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            width: "20%",
+            width: {
+              xl: "20%",
+              lg: "20%",
+              md: "50%",
+              sm: "50%",
+              xs: "90%",
+            },
             height: "90%",
             display: "flex",
             flexDirection: "column",
@@ -153,7 +172,13 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            width: "20%",
+            width: {
+              xl: "20%",
+              lg: "20%",
+              md: "50%",
+              sm: "50%",
+              xs: "90%",
+            },
             height: "90%",
             display: "flex",
             flexDirection: "column",

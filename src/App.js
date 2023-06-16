@@ -26,6 +26,15 @@ const theme = createTheme({
     },
     error: { main: "#ffd700" },
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 500,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
 
 function App() {
@@ -40,7 +49,7 @@ function App() {
       firstSen: "Transform yourself",
       secondSen: "into the Perfect you",
       thirdParagraph:
-        "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
+        "Providing services in Yoga, Personal Training, and Nutrition",
       buttonSen: "Learn More",
       to: "/services",
       image: HeaderImg,

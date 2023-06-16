@@ -10,16 +10,31 @@ export default function Header(props) {
     <Box
       sx={{
         display: "flex",
+        flexDirection: { xl: "row", lg: "row", md: "column" },
+        justifyContent: { xs: "center" },
+        alignContent: { xs: "center" },
         width: "100%",
-        height: { xl: "100vh", lg: "800px" },
+        height: {
+          xl: "100vh",
+          lg: "100vh",
+          md: "100vh",
+          sm: "100vh",
+          xs: "70vh",
+        },
       }}
     >
       <Box
         sx={{
-          width: "50%",
-          height: "100%",
+          width: { xl: "50%", lg: "50%", md: "100%" },
+          height: { xl: "100%", lg: "100%", md: "40%" },
           backgroundColor: "primary.dark",
-          display: "flex",
+          display: {
+            xl: "flex",
+            lg: "flex",
+            md: "none",
+            sm: "none",
+            xs: "none",
+          },
           flexDirection: "column",
           paddingLeft: "70px",
           justifyContent: "center",
@@ -30,10 +45,10 @@ export default function Header(props) {
           variant="h3"
           sx={{
             fontFamily: "Ubuntu",
-            width: { xl: "100%", lg: "440px" },
+            width: { xl: "100%" },
             alignText: "left",
             color: "error.main",
-            fontSize: { xl: "68px", lg: "40px", sm: "24px" },
+            fontSize: { xl: "68px", lg: "50px", sm: "24px" },
           }}
         >
           {props.headerOp.firstSen}
@@ -42,10 +57,10 @@ export default function Header(props) {
           variant="h3"
           sx={{
             fontFamily: "Ubuntu",
-            width: { xl: "100%", lg: "440px" },
+            width: { xl: "100%" },
             alignText: "left",
             color: "#fff",
-            fontSize: { xl: "68px", lg: "40px", sm: "24px" },
+            fontSize: { xl: "68px", lg: "50px", sm: "24px" },
           }}
         >
           {props.headerOp.secondSen}
@@ -54,9 +69,9 @@ export default function Header(props) {
           variant="h6"
           sx={{
             fontFamily: "Ubuntu",
-            width: { xl: "60%", lg: "380px", sm: "150px" },
+            width: { xl: "80%", lg: "70%" },
             color: "#fff",
-            fontSize: { xl: "28px", lg: "16px", sm: "10px" },
+            fontSize: { xl: "28px", lg: "24px", md: "20px", sm: "10px" },
           }}
         >
           {props.headerOp.thirdParagraph}
@@ -67,15 +82,111 @@ export default function Header(props) {
       </Box>
       <Box
         sx={{
-          width: "50%",
-          height: "100%",
+          width: { xl: "50%", lg: "50%", md: "100%", sm: "100%", xs: "100%" },
+          height: {
+            xl: "100%",
+            lg: "100%",
+            md: "100%",
+            sm: "100%",
+            xs: "100%",
+          },
           backgroundImage: `url(${props.headerOp.image})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "right",
-          filter: "grayscale()",
+          display: "flex",
+
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      ></Box>
+      >
+        <Box
+          sx={{
+            width: { xl: "50%", lg: "50%", md: "100%", sm: "100%", xs: "70%" },
+            height: {
+              xl: "100%",
+              lg: "100%",
+              md: "100%",
+              sm: "100%",
+              xs: "30%",
+            },
+            display: {
+              xl: "none",
+              lg: "none",
+              md: "flex",
+              sm: "flex",
+              xs: "flex",
+            },
+            flexDirection: "column",
+            paddingLeft: { md: "70px", sm: "70px", xs: "0px" },
+            paddingTop: { md: "0px", sm: "0px", xs: "10px" },
+            paddingBottom: { md: "0px", sm: "0px", xs: "10px" },
+            justifyContent: "center",
+            alignItems: { md: "start", sm: "start", xs: "center" },
+            gap: "5px",
+            backgroundColor: {
+              xl: "none",
+              lg: "none",
+              md: "none",
+              sm: "none",
+              xs: "rgba(0, 0, 0, 0.7)",
+            },
+            borderRadius: "20px",
+            border: {
+              xl: "none",
+              lg: "none",
+              md: "none",
+              sm: "none",
+              xs: "3px solid white",
+            },
+          }}
+        >
+          <Typography
+            variant="h3"
+            sx={{
+              fontFamily: "Ubuntu",
+              width: { xl: "100%" },
+              alignText: "center",
+              color: "error.main",
+              fontSize: { md: "48px", sm: "36px", xs: "20px" },
+            }}
+          >
+            {props.headerOp.firstSen}
+          </Typography>
+          <Typography
+            variant="h3"
+            sx={{
+              fontFamily: "Ubuntu",
+              width: { xl: "100%" },
+              alignText: "left",
+              color: "#fff",
+              fontSize: { md: "48px", sm: "36px", xs: "20px" },
+            }}
+          >
+            {props.headerOp.secondSen}
+          </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: { md: "left", sm: "left", xs: "center" },
+              fontFamily: "Ubuntu",
+              width: { md: "50%", sm: "50%", xs: "90%" },
+              color: "#fff",
+              fontSize: { md: "28px", sm: "20px", xs: "16px" },
+            }}
+          >
+            {props.headerOp.thirdParagraph}
+          </Typography>
+          <Button
+            component={Link}
+            variant="outlined"
+            pill
+            to={props.headerOp.to}
+          >
+            {props.headerOp.buttonSen}
+          </Button>
+        </Box>
+      </Box>
     </Box>
   );
 }

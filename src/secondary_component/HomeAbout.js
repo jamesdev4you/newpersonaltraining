@@ -10,28 +10,45 @@ const HomeAbout = () => {
   return (
     <Box
       sx={{
-        height: "800px",
+        height: "auto",
         width: "100%",
         backgroundColor: "primary.dark",
         display: "flex",
+
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "center",
+        paddingTop: "100px",
+        paddingBottom: "100px",
       }}
     >
       <Box
         sx={{
-          width: "80%",
-          height: "800px",
+          width: "90%",
+          height: "auto",
           display: "flex",
+          flexDirection: {
+            xl: "row",
+            lg: "row",
+            md: "row",
+            sm: "reverse-row",
+            xs: "reverse-row",
+          },
+          flexWrap: "wrap",
           alignItems: "center",
-          justifyContent: "space-around",
+          justifyContent: "center",
+          gap: "50px",
         }}
       >
         <Box
           sx={{
-            width: "45%",
-            height: "600px",
-
+            width: {
+              xl: "45%",
+              lg: "45%",
+              md: "100%",
+              sm: "100%",
+              xs: "100%",
+            },
+            height: "",
             display: "flex",
             flexDirection: "column",
             alignItems: "start",
@@ -39,14 +56,34 @@ const HomeAbout = () => {
             gap: "30px",
           }}
         >
-          <Typography color="white" variant="h4" sx={{ fontFamily: "Ubuntu" }}>
+          <Typography
+            color="white"
+            sx={{
+              fontFamily: "Ubuntu",
+              fontSize: {
+                xl: "50px",
+                lg: "30px",
+                md: "34px",
+                sm: "34px",
+                xs: "24px",
+              },
+            }}
+          >
             {" "}
             Online & Individual Personal Trainer in Fareham
           </Typography>
           <Typography
             color="white"
-            variant="h6"
-            sx={{ fontFamily: "Normal", fontSize: { xl: "20px", lg: "16px" } }}
+            sx={{
+              fontFamily: "Normal",
+              fontSize: {
+                xl: "20px",
+                lg: "20px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },
+            }}
           >
             {" "}
             Throughout my fitness journey, I’ve helped hundreds of people to
@@ -59,8 +96,16 @@ const HomeAbout = () => {
           </Typography>
           <Typography
             color="white"
-            variant="h6"
-            sx={{ fontFamily: "Normal", fontSize: { xl: "20px", lg: "16px" } }}
+            sx={{
+              fontFamily: "Normal",
+              fontSize: {
+                xl: "20px",
+                lg: "20px",
+                md: "16px",
+                sm: "16px",
+                xs: "16px",
+              },
+            }}
           >
             {" "}
             Throughout my fitness journey, I’ve helped hundreds of people to
@@ -71,12 +116,18 @@ const HomeAbout = () => {
             into the rest of their lives. They're more productive at work.
           </Typography>
           <Button variant="outlined" pill component={Link} to="/about">
-            About Me
+            Find out more!
           </Button>
         </Box>
         <Box
           sx={{
-            width: "45%",
+            width: {
+              xl: "45%",
+              lg: "45%",
+              md: "100%",
+              sm: "100%",
+              xs: "100%",
+            },
             height: "600px",
             backgroundImage: `url(${PersonalTraining})`,
             backgroundRepeat: "no-repeat",

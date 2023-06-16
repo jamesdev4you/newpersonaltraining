@@ -8,6 +8,8 @@ import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
 import "../index.css";
 
+const CertificationList = [];
+
 const Options = [
   {
     logo: <SelfImprovementIcon sx={{ width: "100px", height: "100px" }} />,
@@ -17,7 +19,7 @@ const Options = [
   {
     logo: <FitnessCenterIcon sx={{ width: "100px", height: "100px" }} />,
     title: "Get Massive",
-    desc: "Weightlifting provides a range of advantages, including increased muscular strength, improved bone density, enhanced metabolic function, a heightened body composition, and increased confidence. ",
+    desc: "Weightlifting provides a range of advantages, including increased muscular strength, enhanced metabolic function, heightened body composition, and increased confidence. ",
   },
   {
     logo: <NoFoodIcon sx={{ width: "100px", height: "100px" }} />,
@@ -50,13 +52,19 @@ const HomeOptions = () => {
       ></Box>
       <Box
         sx={{
-          height: "400px",
+          height: {
+            xl: "440px",
+            lg: "440px",
+            md: "450px",
+            sm: "auto",
+            xs: "auto",
+          },
           width: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "start",
           alignItems: "center",
-          gap: "20px",
+          gap: { xl: "20px", lg: "20px", md: "30px", sm: "20px", xs: "20px" },
           marginBottom: "50px",
           backgroundColor: "primary.light",
         }}
@@ -64,21 +72,59 @@ const HomeOptions = () => {
         <Typography
           variant="h3"
           align="center"
-          sx={{ fontFamily: "Ubuntu", width: "50%", color: "white" }}
+          sx={{
+            fontFamily: "Ubuntu",
+            width: "100%",
+            color: "white",
+            fontSize: {
+              xl: "70px",
+              lg: "60px",
+              md: "60px",
+              sm: "54px",
+              xs: "33px",
+            },
+          }}
         >
           Achieve Greatness
         </Typography>
         <Typography
           variant="h3"
           align="center"
-          sx={{ fontFamily: "Ubuntu", width: "60%", color: "error.main" }}
+          sx={{
+            fontFamily: "Ubuntu",
+            width: "100%",
+            color: "error.main",
+            fontSize: {
+              xl: "60px",
+              lg: "50px",
+              md: "50px",
+              sm: "44px",
+              xs: "23px",
+            },
+          }}
         >
           Personal Training in Westchase
         </Typography>
         <Typography
-          variant="h5"
           align="center"
-          sx={{ fontFamily: "Ubuntu", width: "60%", color: "white" }}
+          sx={{
+            fontFamily: "Ubuntu",
+            width: {
+              xl: "60%",
+              lg: "60%",
+              md: "70%",
+              sm: "90%",
+              xs: "95%",
+            },
+            color: "white",
+            fontSize: {
+              xl: "30px",
+              lg: "28px",
+              md: "28px",
+              sm: "24px",
+              xs: "20px",
+            },
+          }}
         >
           Welcome to Edvania PT, your ultimate destination for achieving your
           fitness goals and embracing a healthier lifestyle. Whether you're
@@ -90,20 +136,35 @@ const HomeOptions = () => {
       </Box>
       <Box
         sx={{
-          height: "550px",
-          width: { lg: "80%", sm: "90%" },
+          height: { xl: "550px", md: "auto", sm: "auto", xs: "auto" },
+          width: { xl: "90%", sm: "90%" },
           display: "flex",
-          alignItems: "start",
+          flexDirection: {
+            xl: "row",
+            lg: "row",
+            md: "column",
+            sm: "column",
+            xs: "column",
+          },
+          alignItems: "center",
           justifyContent: "space-around",
+          gap: { xl: "0px", lg: "0px", md: "60px", sm: "50px", xs: "50px" },
+          marginTop: {
+            xl: "0px",
+            lg: "0px",
+            md: "30px",
+            sm: "30px",
+            xs: "0px",
+          },
         }}
       >
         {Options.map((item) => (
           <Box
             sx={{
-              height: "550px",
-              width: { lg: "28%", sm: "30%" },
+              height: { xl: "550px", lg: "550px", md: "550px", sm: "650px" },
+              width: { xl: "28%", lg: "30%", md: "50%", sm: "70%", xs: "80%" },
               zIndex: "1",
-
+              paddingBottom: "50px",
               paddingTop: "50px",
               gap: "20px",
               display: "flex",
@@ -130,7 +191,13 @@ const HomeOptions = () => {
               sx={{
                 fontFamily: "Normal",
                 padding: "20px",
-                fontSize: { xl: "20px", lg: "16px" },
+                fontSize: {
+                  xl: "20px",
+                  lg: "16px",
+                  md: "20px",
+                  sm: "20px",
+                  xs: "14px",
+                },
                 color: "white",
               }}
             >

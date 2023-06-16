@@ -13,7 +13,8 @@ export default function HomeContact() {
     <Box
       sx={{
         width: "100%",
-        height: "300px",
+        height: "auto",
+        paddingBottom: "50px",
         backgroundColor: "primary.dark",
         display: "flex",
         flexDirection: "column",
@@ -24,14 +25,37 @@ export default function HomeContact() {
       <Box
         sx={{
           width: "80%",
-          height: "100px",
+          height: {
+            xl: "80px",
+            lg: "80px",
+            md: "60px",
+            sm: "60px",
+            xs: "40px",
+          },
+          paddingTop: {
+            xl: "0px",
+            lg: "0px",
+            md: "0px",
+            sm: "30px",
+            xs: "30px",
+          },
           display: "flex",
           alignItems: "center",
           justifyContent: "space-evenly",
         }}
       >
         <Typography
-          sx={{ fontSize: "36px", fontFamily: "Ubuntu", color: "gold" }}
+          sx={{
+            fontSize: {
+              xl: "36px",
+              lg: "36px",
+              md: "28px",
+              sm: "28px",
+              xs: "28px",
+            },
+            fontFamily: "Ubuntu",
+            color: "gold",
+          }}
         >
           Let's Connect!
         </Typography>
@@ -42,6 +66,7 @@ export default function HomeContact() {
           width: "100%",
           height: "150px",
           display: "flex",
+          flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "space-evenly",
         }}
@@ -49,8 +74,20 @@ export default function HomeContact() {
         <Link to="#">
           <Box
             sx={{
-              height: "120px",
-              width: "120px",
+              height: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
+              width: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
               backgroundImage: `url(${Facebook})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -62,8 +99,20 @@ export default function HomeContact() {
         <Link to="#">
           <Box
             sx={{
-              height: "120px",
-              width: "120px",
+              height: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
+              width: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
               backgroundImage: `url(${Instagram})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -75,8 +124,20 @@ export default function HomeContact() {
         <Link to="#">
           <Box
             sx={{
-              height: "120px",
-              width: "120px",
+              height: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
+              width: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
               backgroundImage: `url(${Twitter})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -89,8 +150,20 @@ export default function HomeContact() {
         <Link to="#">
           <Box
             sx={{
-              height: "120px",
-              width: "120px",
+              height: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
+              width: {
+                xl: "120px",
+                lg: "120px",
+                md: "60px",
+                sm: "60px",
+                xs: "40px",
+              },
               backgroundImage: `url(${Youtube})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",

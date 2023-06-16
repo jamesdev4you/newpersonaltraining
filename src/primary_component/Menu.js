@@ -68,13 +68,16 @@ export default function Menu() {
           >
             <MenuIcon />
           </IconButton>
-          <img
-            src={Logo}
+          <Box
             alt="yooo"
-            style={{
-              display: { xs: "none", sm: "block" },
+            sx={{
+              display: { sm: "block", xs: "none" },
               height: "75px",
-              width: "85px",
+              width: "75px",
+              backgroundImage: `url(${Logo})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           />
           <Box
@@ -84,7 +87,7 @@ export default function Menu() {
               <Button
                 href={item.href}
                 key={item.text}
-                sx={{ paddingLeft: "25px", color: "#fff" }}
+                sx={{ paddingLeft: "10px", color: "#fff" }}
               >
                 {item.text}
               </Button>
