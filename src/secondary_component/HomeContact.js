@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import Facebook from "../assets/facebook.png";
 import Instagram from "../assets/instagram.png";
 import Twitter from "../assets/twitter.png";
@@ -32,7 +33,6 @@ export default function HomeContact() {
         <Typography
           sx={{ fontSize: "36px", fontFamily: "Ubuntu", color: "gold" }}
         >
-          {" "}
           Let's Connect!
         </Typography>
       </Box>
@@ -46,49 +46,60 @@ export default function HomeContact() {
           justifyContent: "space-evenly",
         }}
       >
-        <Box
-          sx={{
-            height: "120px",
-            width: "120px",
-            backgroundImage: `url(${Facebook})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "right",
-          }}
-        ></Box>
-        <Box
-          sx={{
-            height: "120px",
-            width: "120px",
-            backgroundImage: `url(${Instagram})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "right",
-          }}
-          src="#"
-        ></Box>
-        <Box
-          sx={{
-            height: "120px",
-            width: "120px",
-            backgroundImage: `url(${Twitter})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "right",
-          }}
-          src="#"
-        ></Box>
-        <Box
-          sx={{
-            height: "120px",
-            width: "120px",
-            backgroundImage: `url(${Youtube})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "right",
-          }}
-          src="#"
-        ></Box>
+        <Link to="#">
+          <Box
+            sx={{
+              height: "120px",
+              width: "120px",
+              backgroundImage: `url(${Facebook})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "right",
+              cursor: "pointer",
+            }}
+          ></Box>
+        </Link>
+        <Link to="#">
+          <Box
+            sx={{
+              height: "120px",
+              width: "120px",
+              backgroundImage: `url(${Instagram})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "right",
+              cursor: "pointer",
+            }}
+          ></Box>
+        </Link>
+        <Link to="#">
+          <Box
+            sx={{
+              height: "120px",
+              width: "120px",
+              backgroundImage: `url(${Twitter})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "right",
+              cursor: "pointer",
+            }}
+            src="#"
+          ></Box>
+        </Link>
+        <Link to="#">
+          <Box
+            sx={{
+              height: "120px",
+              width: "120px",
+              backgroundImage: `url(${Youtube})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "right",
+              cursor: "pointer",
+            }}
+            src="#"
+          ></Box>
+        </Link>
       </Box>
     </Box>
   );

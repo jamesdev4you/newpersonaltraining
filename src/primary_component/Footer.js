@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import "../index.css";
 
 export default function Footer() {
@@ -36,11 +37,45 @@ export default function Footer() {
             {" "}
             Pages{" "}
           </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Home </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> About </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Services </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Testimonials </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Contact </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            <Link href="/home" sx={{ textDecoration: "none", color: "black" }}>
+              {" "}
+              Home{" "}
+            </Link>
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link href="/about" sx={{ textDecoration: "none", color: "black" }}>
+              About
+            </Link>{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/services"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Services
+            </Link>{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/testimonials"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Testimonials
+            </Link>{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/contact"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Contact
+            </Link>{" "}
+          </Typography>
         </Box>
         <Box
           sx={{
@@ -62,10 +97,33 @@ export default function Footer() {
             {" "}
             Services{" "}
           </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Body Building </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Nutrition </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Training </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> Yoga </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/services"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Body Building
+            </Link>{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/services"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Nutrition
+            </Link>{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            <Link
+              href="/services"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Yoga
+            </Link>{" "}
+          </Typography>
         </Box>
         <Box
           sx={{

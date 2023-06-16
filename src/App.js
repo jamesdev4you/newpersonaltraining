@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "./primary_component/Menu";
@@ -29,6 +29,10 @@ const theme = createTheme({
 });
 
 function App() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [count, setCount] = useState(0);
 
   const headerOptions = [
@@ -38,6 +42,7 @@ function App() {
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
+      to: "/services",
       image: HeaderImg,
     },
     {
@@ -46,6 +51,7 @@ function App() {
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
+      to: "/services",
       image: HeaderImg,
     },
     {
@@ -54,6 +60,7 @@ function App() {
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
+      to: "/contact",
       image: HeaderImg,
     },
     {
@@ -62,6 +69,7 @@ function App() {
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
+      to: "/services",
       image: HeaderImg,
     },
     {
@@ -70,6 +78,7 @@ function App() {
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
+      to: "/services",
       image: HeaderImg,
     },
   ];

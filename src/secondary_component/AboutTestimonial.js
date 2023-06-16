@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button } from "../custom_components/Styled";
+import { Link } from "react-router-dom";
 import Header from "../assets/header.jpg";
 
 const AboutTestimonial = () => {
@@ -80,7 +81,7 @@ const AboutTestimonial = () => {
           textAlign: "center",
           width: "60%",
           color: "white",
-          marginTop: "50px",
+
           marginBottom: "20px",
         }}
       >
@@ -91,6 +92,9 @@ const AboutTestimonial = () => {
         essential - but it can also slow your progress down while you are
         spending time on trial and error. ​​
       </Typography>
+      <Button variant="outlined" pill component={Link} to="/services">
+        Let's Begin!
+      </Button>
     </Box>
   );
 };

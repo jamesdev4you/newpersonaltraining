@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import PersonalTraining from "../assets/personaltraining.jpg";
 import { Button } from "../custom_components/Styled";
+import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import "../index.css";
 
@@ -69,7 +70,7 @@ const HomeAbout = () => {
             coaching and support they receive has a positive knock-on effect
             into the rest of their lives. They're more productive at work.
           </Typography>
-          <Button variant="outlined" pill>
+          <Button variant="outlined" pill component={Link} to="/about">
             About Me
           </Button>
         </Box>

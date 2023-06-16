@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { Button } from "../custom_components/Styled";
+import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import "../index.css";
 
@@ -60,7 +61,7 @@ export default function Header(props) {
         >
           {props.headerOp.thirdParagraph}
         </Typography>
-        <Button variant="outlined" pill>
+        <Button component={Link} variant="outlined" pill to={props.headerOp.to}>
           {props.headerOp.buttonSen}
         </Button>
       </Box>

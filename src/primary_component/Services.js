@@ -213,8 +213,6 @@ const Services = (props) => {
           )}
         </Box>
       </Box>
-      <AboutQuote />
-      <AboutTestimonial />
       <HomeContact />
     </>
   );

@@ -5,6 +5,7 @@ import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import NoFoodIcon from "@mui/icons-material/NoFood";
 import { Button } from "../custom_components/Styled";
+import { Link } from "react-router-dom";
 import "../index.css";
 
 const Options = [
@@ -135,7 +136,7 @@ const HomeOptions = () => {
             >
               {item.desc}
             </Typography>
-            <Button variant="outlined" pill>
+            <Button variant="outlined" pill component={Link} to="/services">
               {" "}
               Learn More
             </Button>
