@@ -35,6 +35,7 @@ const AboutOpening = () => {
             textAlign: "center",
             width: "100%",
             color: "white",
+            fontFamily: "Ubuntu",
           }}
         >
           Edvania Peterson
@@ -51,7 +52,7 @@ const AboutOpening = () => {
             backgroundSize: "cover",
             backgroundPosition: "right",
             border: "5px solid",
-            borderColor: "error.main",
+            borderColor: "white",
           }}
         ></Box>
       </Box>
@@ -71,6 +72,7 @@ const AboutOpening = () => {
             textAlign: "left",
             width: "100%",
             color: "white",
+            fontFamily: "Ubuntu",
           }}
         >
           Meet your trainer
@@ -81,6 +83,7 @@ const AboutOpening = () => {
             textAlign: "left",
             width: "100%",
             color: "white",
+            fontFamily: "Normal",
           }}
         >
           There was a time where I felt uncomfortable in my clothes and my skin.
@@ -95,6 +98,7 @@ const AboutOpening = () => {
             textAlign: "left",
             width: "100%",
             color: "white",
+            fontFamily: "Normal",
           }}
         >
           I didn't know what I was doing. I had no direction and without a plan,
@@ -108,6 +112,7 @@ const AboutOpening = () => {
             textAlign: "left",
             width: "100%",
             color: "white",
+            fontFamily: "Normal",
           }}
         >
           Then, in 2002 I joined the military. That was a pivotal time in my
@@ -126,6 +131,7 @@ const AboutOpening = () => {
             textAlign: "left",
             width: "100%",
             color: "white",
+            fontFamily: "Normal",
           }}
         >
           I was in the military for over 15 years. When I left, I took a

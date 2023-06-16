@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
+import HomeContact from "../secondary_component/HomeContact";
 
 const Testimonials = (props) => {
   const testimonialInformation = [
@@ -114,6 +115,7 @@ const Testimonials = (props) => {
           })}
         </Box>
       </Box>
+      <HomeContact />
     </>
   );
 };
