@@ -35,7 +35,14 @@ export default function ContactForm() {
   };
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
       <Typography
         sx={{ fontSize: "36px", color: "white", fontStyle: "italic" }}
       >
@@ -44,9 +51,15 @@ export default function ContactForm() {
       <Typography sx={{ fontSize: "16px", color: "white", padding: "30px 0" }}>
         <span style={{ color: "red" }}>*</span> INDICATES REQUIRED FIELD!
       </Typography>
-      <form style={{ paddingTop: "5px" }} ref={form} onSubmit={sendEmail}>
+      <form
+        style={{
+          paddingTop: "5px",
+        }}
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <Grid container spacing={2}>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <TextField
               name="user_firstname"
               label="First Name"
@@ -85,7 +98,7 @@ export default function ContactForm() {
               }}
             />
           </Grid>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <TextField
               name="user_lastname"
               label="Last Name"
@@ -123,7 +136,7 @@ export default function ContactForm() {
               }}
             />
           </Grid>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <TextField
               type="email"
               name="user_email"
@@ -163,7 +176,7 @@ export default function ContactForm() {
               }}
             />
           </Grid>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <TextField
               type="number"
               name="user_phone"
@@ -203,7 +216,7 @@ export default function ContactForm() {
               }}
             />
           </Grid>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <TextField
               label="Message"
               name="message"
@@ -244,7 +257,7 @@ export default function ContactForm() {
               }}
             />
           </Grid>
-          <Grid xs={9} item sx={{ marginRight: "auto" }}>
+          <Grid xs={12} item sx={{ marginRight: "auto" }}>
             <Button
               type="submit"
               value="Send"
@@ -257,6 +270,6 @@ export default function ContactForm() {
           </Grid>
         </Grid>
       </form>
-    </>
+    </div>
   );
 }

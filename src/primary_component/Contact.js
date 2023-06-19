@@ -11,28 +11,65 @@ const Contact = (props) => {
     <>
       <Header headerOp={props.headerOp} />
       <Box
-        sx={{ height: "800px", width: "100%", backgroundColor: "primary.main" }}
+        sx={{
+          height: "100%",
+          width: "100%",
+          backgroundColor: "primary.main",
+        }}
       >
         <Box
           sx={{
-            height: "800px",
-            width: "60%",
+            height: "auto",
+            width: "80%",
             margin: "auto",
             display: "flex",
+            gap: "35px",
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "column",
+              sm: "column",
+              xs: "column",
+            },
             justifyContent: "space-between",
           }}
         >
           <Box
             sx={{
-              height: "700px",
-              width: "40%",
-              marginRight: "30px",
-              marginTop: "50px",
+              height: "auto",
+              width: {
+                xl: "40%",
+                lg: "100%",
+                md: "100%",
+                sm: "100%",
+                xs: "100%",
+              },
+
+              margin: "50px auto",
             }}
           >
             <ContactForm />
           </Box>
-          <Box sx={{ height: "800px", width: "60%", marginTop: "50px" }}>
+          <Box
+            sx={{
+              height: "auto",
+              width: {
+                xl: "60%",
+                lg: "60%",
+                md: "100%",
+                sm: "100%",
+                xs: "100%",
+              },
+              marginTop: {
+                xl: "185px",
+                lg: "50px",
+                md: "30px",
+                sm: "0px",
+                xs: "0px",
+              },
+              marginBottom: "50px",
+            }}
+          >
             <Box
               sx={{
                 height: "200px",
@@ -56,25 +93,65 @@ const Contact = (props) => {
             </Box>
             <Box
               sx={{
-                height: "300px",
+                height: "auto",
                 width: "100%",
                 display: "flex",
                 paddingTop: "30px",
+                flexDirection: {
+                  xl: "row",
+                  lg: "column",
+                  md: "column",
+                  sm: "column",
+                  xs: "column",
+                },
               }}
             >
-              <Box>
+              <Box
+                sx={{
+                  height: "170px",
+                  width: "100%",
+                  borderBottom: {
+                    xl: "none",
+                    lg: "1px solid grey",
+                    md: "1px solid grey",
+                    sm: "1px solid grey",
+                    xs: "1px solid grey",
+                  },
+                }}
+              >
                 <Typography
                   sx={{ fontSize: "36px", color: "white", fontStyle: "italic" }}
                 >
                   Telephone
                 </Typography>
                 <Typography
-                  sx={{ fontSize: "20px", color: "white", paddingTop: "30px" }}
+                  sx={{
+                    fontSize: "20px",
+                    color: "white",
+                    paddingTop: "30px",
+                  }}
                 >
                   555-555-5555
                 </Typography>
               </Box>
-              <Box sx={{ marginLeft: "30%" }}>
+              <Box
+                sx={{
+                  marginLeft: {
+                    xl: "30%",
+                    lg: "0%",
+                    md: "0%",
+                    sm: "0%",
+                    xs: "0%",
+                  },
+                  marginTop: {
+                    xl: "0%",
+                    lg: "30px",
+                    md: "30px",
+                    sm: "30px",
+                    xs: "30px",
+                  },
+                }}
+              >
                 <Typography
                   sx={{ fontSize: "36px", color: "white", fontStyle: "italic" }}
                 >

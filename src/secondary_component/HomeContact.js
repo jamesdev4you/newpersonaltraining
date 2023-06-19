@@ -14,7 +14,7 @@ export default function HomeContact() {
       sx={{
         width: "100%",
         height: "auto",
-        paddingBottom: "50px",
+        paddingBottom: "20px",
         backgroundColor: "primary.dark",
         display: "flex",
         flexDirection: "column",
@@ -64,7 +64,14 @@ export default function HomeContact() {
       <Box
         sx={{
           width: "100%",
-          height: "150px",
+          height: {
+            xl: "150px",
+            lg: "150px",
+            md: "90px",
+            sm: "90px",
+            xs: "80px",
+          },
+
           display: "flex",
           flexWrap: "wrap",
           alignItems: "center",

@@ -6,7 +6,7 @@ import "../index.css";
 
 export default function Footer() {
   return (
-    <Box sx={{ width: "100%", height: "auto", backgroundColor: "lightgrey" }}>
+    <Box sx={{ width: "100%", height: "100%", backgroundColor: "lightgrey" }}>
       <Box
         sx={{
           width: "90%",

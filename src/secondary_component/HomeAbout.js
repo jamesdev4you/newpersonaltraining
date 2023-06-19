@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import PersonalTraining from "../assets/personaltraining.jpg";
 import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Typography from "@mui/material/Typography";
 import "../index.css";
 
+const squareVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
+};
+
 const HomeAbout = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <Box
       sx={{
@@ -56,65 +72,73 @@ const HomeAbout = () => {
             gap: "30px",
           }}
         >
-          <Typography
-            color="white"
-            sx={{
-              fontFamily: "Ubuntu",
-              fontSize: {
-                xl: "50px",
-                lg: "30px",
-                md: "34px",
-                sm: "34px",
-                xs: "24px",
-              },
-            }}
+          <motion.div
+            ref={ref}
+            animate={controls}
+            variants={squareVariants}
+            initial="hidden"
           >
-            {" "}
-            Online & Individual Personal Trainer in Fareham
-          </Typography>
-          <Typography
-            color="white"
-            sx={{
-              fontFamily: "Normal",
-              fontSize: {
-                xl: "20px",
-                lg: "20px",
-                md: "16px",
-                sm: "16px",
-                xs: "16px",
-              },
-            }}
-          >
-            {" "}
-            Throughout my fitness journey, I’ve helped hundreds of people to
-            improve their relationship with food and their bodies. But more than
-            that, they've extended their lives and put the spark back into their
-            training. While variety is essential to keep you interested - too
-            much variety might inhibit your progress. That's why, as a personal
-            trainer in Fareham, I want to help you stick with a training
-            programme long enough that you see real results.
-          </Typography>
-          <Typography
-            color="white"
-            sx={{
-              fontFamily: "Normal",
-              fontSize: {
-                xl: "20px",
-                lg: "20px",
-                md: "16px",
-                sm: "16px",
-                xs: "16px",
-              },
-            }}
-          >
-            {" "}
-            Throughout my fitness journey, I’ve helped hundreds of people to
-            improve their relationship with food and their bodies. But more than
-            that, they've extended their lives and put the spark back into their
-            training. But they soon learn that the flexibility, nutritional
-            coaching and support they receive has a positive knock-on effect
-            into the rest of their lives. They're more productive at work.
-          </Typography>
+            <Typography
+              color="white"
+              sx={{
+                fontFamily: "Ubuntu",
+                fontSize: {
+                  xl: "50px",
+                  lg: "30px",
+                  md: "34px",
+                  sm: "34px",
+                  xs: "24px",
+                },
+              }}
+            >
+              {" "}
+              Online & Individual Personal Trainer in Fareham
+            </Typography>
+            <Typography
+              color="white"
+              sx={{
+                fontFamily: "Normal",
+                fontSize: {
+                  xl: "20px",
+                  lg: "20px",
+                  md: "16px",
+                  sm: "16px",
+                  xs: "16px",
+                },
+              }}
+            >
+              {" "}
+              Throughout my fitness journey, I’ve helped hundreds of people to
+              improve their relationship with food and their bodies. But more
+              than that, they've extended their lives and put the spark back
+              into their training. While variety is essential to keep you
+              interested - too much variety might inhibit your progress. That's
+              why, as a personal trainer in Fareham, I want to help you stick
+              with a training programme long enough that you see real results.
+            </Typography>
+            <Typography
+              color="white"
+              sx={{
+                fontFamily: "Normal",
+                fontSize: {
+                  xl: "20px",
+                  lg: "20px",
+                  md: "16px",
+                  sm: "16px",
+                  xs: "16px",
+                },
+              }}
+            >
+              {" "}
+              Throughout my fitness journey, I’ve helped hundreds of people to
+              improve their relationship with food and their bodies. But more
+              than that, they've extended their lives and put the spark back
+              into their training. But they soon learn that the flexibility,
+              nutritional coaching and support they receive has a positive
+              knock-on effect into the rest of their lives. They're more
+              productive at work.
+            </Typography>
+          </motion.div>
           <Button variant="outlined" pill component={Link} to="/about">
             Find out more!
           </Button>
@@ -132,7 +156,8 @@ const HomeAbout = () => {
             backgroundImage: `url(${PersonalTraining})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "right",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
           }}
         ></Box>
       </Box>

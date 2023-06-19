@@ -74,12 +74,46 @@ const Services = (props) => {
       >
         <Box
           sx={{
-            width: "70%",
+            width: {
+              xl: "90%",
+              lg: "90%",
+              md: "90%",
+              sm: "90%",
+              xs: "100%",
+            },
             height: "auto",
             display: "flex",
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "column",
+              sm: "column",
+              xs: "column",
+            },
             margin: "auto",
-            padding: "100px",
+            padding: {
+              xl: "100px",
+              lg: "100px",
+              md: "50px 0px",
+              sm: "50px 0px",
+              xs: "50px 0px",
+            },
             justifyContent: "space-evenly",
+            alignItems: {
+              xl: "none",
+              lg: "none",
+              md: "center",
+              sm: "center",
+              xs: "center",
+            },
+            gap: {
+              xl: "none",
+              lg: "none",
+              md: "50px",
+              sm: "50px",
+              xs: "50px",
+            },
+
             backgroundColor: "primary.light",
           }}
         >
@@ -102,7 +136,13 @@ const Services = (props) => {
               return (
                 <Box
                   sx={{
-                    width: "30%",
+                    width: {
+                      xl: "30%",
+                      lg: "30%",
+                      md: "80%",
+                      sm: "80%",
+                      xs: "80%",
+                    },
                     height: "auto",
                     display: "flex",
                     flexDirection: "column",
@@ -133,7 +173,13 @@ const Services = (props) => {
                   <Typography
                     sx={{
                       padding: "20px 0px",
-                      fontSize: "36px",
+                      fontSize: {
+                        xl: "26px",
+                        lg: "26px",
+                        md: "20px",
+                        sm: "20px",
+                        xs: "18px",
+                      },
                       fontFamily: "Ubuntu",
                     }}
                   >
@@ -151,9 +197,22 @@ const Services = (props) => {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: "18px",
+                      fontSize: {
+                        xl: "18px",
+                        lg: "18px",
+                        md: "18px",
+                        sm: "18px",
+                        xs: "16px",
+                      },
                       padding: "20px 0",
                       fontFamily: "Normal",
+                      display: {
+                        xl: "inline",
+                        lg: "inline",
+                        md: "inline",
+                        sm: "none",
+                        xs: "none",
+                      },
                     }}
                   >
                     {description}

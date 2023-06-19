@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
@@ -6,6 +6,8 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import NoFoodIcon from "@mui/icons-material/NoFood";
 import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../index.css";
 
 const CertificationList = [];
@@ -28,9 +30,21 @@ const Options = [
   },
 ];
 
-const Certifications = [];
+const squareVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 const HomeOptions = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <Box
       sx={{
@@ -43,13 +57,6 @@ const HomeOptions = () => {
         background: "linear-gradient(to bottom, #33518E 90%, #001A4F 10%)",
       }}
     >
-      <Box
-        sx={{
-          height: "300px",
-          width: "100%",
-          backgroundColor: "primary.light",
-        }}
-      ></Box>
       <Box
         sx={{
           height: {
@@ -65,74 +72,96 @@ const HomeOptions = () => {
           justifyContent: "start",
           alignItems: "center",
           gap: { xl: "20px", lg: "20px", md: "30px", sm: "20px", xs: "20px" },
-          marginBottom: "50px",
+          margin: "100px 0px",
           backgroundColor: "primary.light",
         }}
       >
-        <Typography
-          variant="h3"
-          align="center"
-          sx={{
-            fontFamily: "Ubuntu",
-            width: "100%",
-            color: "white",
-            fontSize: {
-              xl: "70px",
-              lg: "60px",
-              md: "60px",
-              sm: "54px",
-              xs: "33px",
-            },
-          }}
+        <motion.div
+          ref={ref}
+          animate={controls}
+          variants={squareVariants}
+          initial="hidden"
         >
-          Achieve Greatness
-        </Typography>
-        <Typography
-          variant="h3"
-          align="center"
-          sx={{
-            fontFamily: "Ubuntu",
-            width: "100%",
-            color: "error.main",
-            fontSize: {
-              xl: "60px",
-              lg: "50px",
-              md: "50px",
-              sm: "44px",
-              xs: "23px",
-            },
-          }}
+          <Typography
+            variant="h3"
+            align="center"
+            sx={{
+              fontFamily: "Ubuntu",
+              width: "100%",
+              color: "white",
+              fontSize: {
+                xl: "70px",
+                lg: "60px",
+                md: "60px",
+                sm: "54px",
+                xs: "33px",
+              },
+            }}
+          >
+            Achieve Greatness
+          </Typography>
+        </motion.div>
+        <motion.div
+          ref={ref}
+          animate={controls}
+          variants={squareVariants}
+          initial="hidden"
         >
-          Personal Training in Westchase
-        </Typography>
-        <Typography
-          align="center"
-          sx={{
-            fontFamily: "Ubuntu",
-            width: {
-              xl: "60%",
-              lg: "60%",
-              md: "70%",
-              sm: "90%",
-              xs: "95%",
-            },
-            color: "white",
-            fontSize: {
-              xl: "30px",
-              lg: "28px",
-              md: "28px",
-              sm: "24px",
-              xs: "20px",
-            },
-          }}
+          <Typography
+            variant="h3"
+            align="center"
+            sx={{
+              fontFamily: "Ubuntu",
+              width: "100%",
+              color: "error.main",
+              fontSize: {
+                xl: "60px",
+                lg: "50px",
+                md: "50px",
+                sm: "44px",
+                xs: "23px",
+              },
+            }}
+          >
+            Personal Training in Westchase
+          </Typography>
+        </motion.div>
+        <motion.div
+          ref={ref}
+          animate={controls}
+          variants={squareVariants}
+          initial="hidden"
         >
-          Welcome to Edvania PT, your ultimate destination for achieving your
-          fitness goals and embracing a healthier lifestyle. Whether you're
-          determined to shed those extra pounds, tone your body, build lean
-          muscle, or simply enhance your overall well-being, our comprehensive
-          range of programs is tailored to meet your unique needs and
-          aspirations.
-        </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Ubuntu",
+              width: {
+                xl: "60%",
+                lg: "60%",
+                md: "70%",
+                sm: "90%",
+                xs: "95%",
+              },
+              color: "white",
+              fontSize: {
+                xl: "30px",
+                lg: "28px",
+                md: "28px",
+                sm: "24px",
+                xs: "20px",
+              },
+              margin: "auto",
+              textAlign: "center",
+            }}
+          >
+            Welcome to Edvania PT, your ultimate destination for achieving your
+            fitness goals and embracing a healthier lifestyle. Whether you're
+            determined to shed those extra pounds, tone your body, build lean
+            muscle, or simply enhance your overall well-being, our comprehensive
+            range of programs is tailored to meet your unique needs and
+            aspirations.
+          </Typography>
+        </motion.div>
       </Box>
       <Box
         sx={{

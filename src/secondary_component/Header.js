@@ -94,8 +94,8 @@ export default function Header(props) {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "right",
+          backgroundAttachment: "fixed",
           display: "flex",
-
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -108,7 +108,7 @@ export default function Header(props) {
               lg: "100%",
               md: "100%",
               sm: "100%",
-              xs: "30%",
+              xs: "40%",
             },
             display: {
               xl: "none",

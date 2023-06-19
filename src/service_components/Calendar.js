@@ -1,9 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Button } from "../custom_components/Styled";
 import "../index.css";
-import { Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import Typography from "@mui/material/Typography";
 import { InlineWidget } from "react-calendly";
 
 const Calendar = (props) => {
@@ -43,15 +41,40 @@ const Calendar = (props) => {
         height: "1000px",
         width: "100%",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "primary.light",
       }}
     >
+      <Typography
+        sx={{
+          padding: "30px 0px",
+          fontSize: {
+            xl: "46px",
+            lg: "46px",
+            md: "46px",
+            sm: "30px",
+            xs: "20px",
+          },
+          borderBottom: {
+            xl: "1px solid white",
+            lg: "1px solid white",
+            md: "1px solid white",
+            sm: "none",
+            xs: "none",
+          },
+          fontFamily: "Ubuntu",
+          textAlign: "center",
+          color: "#FFD700",
+        }}
+      >
+        Start Your Journey Today!
+      </Typography>
       {calendarUrl && (
         <InlineWidget
           url={calendarUrl}
-          styles={{ width: "50%", height: "700px" }}
+          styles={{ width: "95%", height: "700px" }}
         />
       )}
     </Box>

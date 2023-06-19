@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import PersonalTraining from "../assets/personaltraining.jpg";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../index.css";
 
+const squareVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  hidden: { opacity: 0, scale: 0 },
+};
+
 const HomeTestimonial = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   const beforeAfterTestimonials = [
     {
       before: PersonalTraining,
@@ -78,46 +94,53 @@ const HomeTestimonial = () => {
             backgroundColor: "primary.light",
           }}
         >
-          <Typography
-            sx={{
-              fontFamily: "Ubuntu",
-              color: "error.main",
-              textAlign: "center",
-              fontSize: {
-                xl: "60px",
-                lg: "50px",
-                md: "50px",
-                sm: "44px",
-                xs: "23px",
-              },
-            }}
+          <motion.div
+            ref={ref}
+            animate={controls}
+            variants={squareVariants}
+            initial="hidden"
           >
-            The Results You Can Expect
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Normal",
-              color: "white",
-              textAlign: "center",
-              padding: "50px 0",
-              fontSize: {
-                xl: "20px",
-                lg: "20px",
-                md: "16px",
-                sm: "16px",
-                xs: "16px",
-              },
-            }}
-          >
-            The Armoury would be nothing without the men and women that have put
-            their trust in us over the last 10 years, and working together we've
-            had the privilege of seeing some truly tremendous accomplishments.
-            Whether that means gaining the confidence to wear a two-piece at the
-            beach after having their first child, fitting into the suit they
-            always imagined they'd wear for their daughters wedding, or the
-            everyday confidence that permeates everything they do, installed
-            through the effort they've put in.{" "}
-          </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Ubuntu",
+                color: "error.main",
+                textAlign: "center",
+                fontSize: {
+                  xl: "60px",
+                  lg: "50px",
+                  md: "50px",
+                  sm: "44px",
+                  xs: "23px",
+                },
+              }}
+            >
+              The Results You Can Expect
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Normal",
+                color: "white",
+                textAlign: "center",
+                padding: "50px 0",
+                fontSize: {
+                  xl: "20px",
+                  lg: "20px",
+                  md: "16px",
+                  sm: "16px",
+                  xs: "16px",
+                },
+              }}
+            >
+              The Armoury would be nothing without the men and women that have
+              put their trust in us over the last 10 years, and working together
+              we've had the privilege of seeing some truly tremendous
+              accomplishments. Whether that means gaining the confidence to wear
+              a two-piece at the beach after having their first child, fitting
+              into the suit they always imagined they'd wear for their daughters
+              wedding, or the everyday confidence that permeates everything they
+              do, installed through the effort they've put in.{" "}
+            </Typography>
+          </motion.div>
         </Box>
         <Box
           sx={{
@@ -155,7 +178,7 @@ const HomeTestimonial = () => {
                 >
                   <Box
                     sx={{
-                      width: "48%",
+                      width: "48.5%",
 
                       height: {
                         xl: "500px",
@@ -173,7 +196,7 @@ const HomeTestimonial = () => {
                   ></Box>
                   <Box
                     sx={{
-                      width: "49%",
+                      width: "48.5%",
                       height: {
                         xl: "500px",
                         lg: "300px",

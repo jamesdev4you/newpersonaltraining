@@ -7,7 +7,8 @@ import "../index.css";
 
 const personalTrainingDescriptions = [
   {
-    name: "Bronze",
+    name: "Bronze 🥉",
+    color: "#DD9449",
     price: "FROM $35/WEEK",
     plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
     description:
@@ -22,7 +23,8 @@ const personalTrainingDescriptions = [
     number: 4,
   },
   {
-    name: "Silver",
+    name: "Silver 🥈",
+    color: "#aaa9ad",
     price: "FROM $35/WEEK",
     plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
     description:
@@ -37,7 +39,8 @@ const personalTrainingDescriptions = [
     number: 5,
   },
   {
-    name: "Gold",
+    name: "Gold 🥇",
+    color: "#FFD700",
     price: "FROM $35/WEEK",
     plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
     description:
@@ -64,18 +67,53 @@ const PersonalTraining = (props) => {
     >
       <Box
         sx={{
-          width: "70%",
+          width: {
+            xl: "90%",
+            lg: "90%",
+            md: "90%",
+            sm: "90%",
+            xs: "100%",
+          },
           height: "auto",
           display: "flex",
+          flexDirection: {
+            xl: "row",
+            lg: "row",
+            md: "column",
+            sm: "column",
+            xs: "column",
+          },
           margin: "auto",
-          padding: "100px",
+          padding: {
+            xl: "100px",
+            lg: "100px",
+            md: "50px 0px",
+            sm: "50px 0px",
+            xs: "50px 0px",
+          },
           justifyContent: "space-evenly",
+          alignItems: {
+            xl: "none",
+            lg: "none",
+            md: "center",
+            sm: "center",
+            xs: "center",
+          },
+          gap: {
+            xl: "none",
+            lg: "none",
+            md: "50px",
+            sm: "50px",
+            xs: "50px",
+          },
+
           backgroundColor: "primary.light",
         }}
       >
         {personalTrainingDescriptions.map(
           ({
             name,
+            color,
             price,
             plan,
             description,
@@ -91,7 +129,13 @@ const PersonalTraining = (props) => {
             return (
               <Box
                 sx={{
-                  width: "30%",
+                  width: {
+                    xl: "30%",
+                    lg: "30%",
+                    md: "80%",
+                    sm: "80%",
+                    xs: "80%",
+                  },
                   height: "auto",
                   display: "flex",
                   flexDirection: "column",
@@ -101,9 +145,11 @@ const PersonalTraining = (props) => {
                 <Typography
                   sx={{
                     padding: "30px 0px",
-                    fontSize: "26px",
+                    fontSize: "46px",
                     borderBottom: "1px solid white",
                     fontFamily: "Ubuntu",
+                    textAlign: "center",
+                    color: { color },
                   }}
                 >
                   {name}
@@ -129,9 +175,22 @@ const PersonalTraining = (props) => {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "18px",
+                    fontSize: {
+                      xl: "18px",
+                      lg: "18px",
+                      md: "18px",
+                      sm: "18px",
+                      xs: "16px",
+                    },
                     padding: "20px 0",
                     fontFamily: "Normal",
+                    display: {
+                      xl: "inline",
+                      lg: "inline",
+                      md: "inline",
+                      sm: "none",
+                      xs: "none",
+                    },
                   }}
                 >
                   {description}

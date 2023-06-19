@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
 import Header from "../assets/header.jpg";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const squareVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 const AboutTestimonial = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  const [ref2, inView2] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   const aboutPictures = [Header, Header, Header, Header, Header, Header];
 
   return (
@@ -21,50 +38,58 @@ const AboutTestimonial = () => {
         padding: "50px 0",
       }}
     >
-      <Typography
-        sx={{
-          fontSize: {
-            xl: "50px",
-            lg: "30px",
-            md: "34px",
-            sm: "34px",
-            xs: "24px",
-          },
-          textAlign: "center",
-          width: "90%",
-          color: "white",
-        }}
+      <motion.div
+        ref={ref}
+        animate={controls}
+        variants={squareVariants}
+        initial="hidden"
       >
-        Why choose Edvania for Personal Training?
-      </Typography>
-      <Typography
-        sx={{
-          fontSize: {
-            xl: "28px",
-            lg: "26px",
-            md: "22px",
-            sm: "20px",
-            xs: "18px",
-          },
-          textAlign: "center",
-          width: {
-            xl: "80%",
-            lg: "80%",
-            md: "80%",
-            sm: "95%",
-            xs: "95%",
-          },
-          color: "white",
-          marginTop: "50px",
-        }}
-      >
-        At RCotterill PT, I want to help men and women that have felt like
-        they've been spinning their wheels with their fitness and health. I
-        grasp that different diets can seem attractive and trying various
-        solutions to find the style of eating that's right for you seems
-        essential - but it can also slow your progress down while you are
-        spending time on trial and error. ​​
-      </Typography>
+        <Typography
+          sx={{
+            fontSize: {
+              xl: "50px",
+              lg: "30px",
+              md: "34px",
+              sm: "34px",
+              xs: "24px",
+            },
+            textAlign: "center",
+            width: "93%",
+            color: "white",
+            margin: "auto",
+          }}
+        >
+          Why choose Edvania for Personal Training?
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: {
+              xl: "28px",
+              lg: "26px",
+              md: "22px",
+              sm: "20px",
+              xs: "16px",
+            },
+            textAlign: "center",
+            width: {
+              xl: "80%",
+              lg: "80%",
+              md: "80%",
+              sm: "95%",
+              xs: "90%",
+            },
+            color: "white",
+            margin: "auto",
+          }}
+        >
+          At RCotterill PT, I want to help men and women that have felt like
+          they've been spinning their wheels with their fitness and health. I
+          grasp that different diets can seem attractive and trying various
+          solutions to find the style of eating that's right for you seems
+          essential - but it can also slow your progress down while you are
+          spending time on trial and error. ​​
+        </Typography>
+      </motion.div>
       <Box
         sx={{
           display: "flex",
@@ -132,7 +157,7 @@ const AboutTestimonial = () => {
             lg: "26px",
             md: "22px",
             sm: "20px",
-            xs: "18px",
+            xs: "16px",
           },
           textAlign: "center",
           width: {
@@ -140,11 +165,11 @@ const AboutTestimonial = () => {
             lg: "80%",
             md: "80%",
             sm: "95%",
-            xs: "95%",
+            xs: "90%",
           },
           color: "white",
-
-          margin: "20px 0",
+          paddingBottom: "20px",
+          margin: "auto",
         }}
       >
         At RCotterill PT, I want to help men and women that have felt like
