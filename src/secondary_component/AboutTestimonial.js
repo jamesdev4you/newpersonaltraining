@@ -150,35 +150,7 @@ const AboutTestimonial = () => {
           );
         })}
       </Box>
-      <Typography
-        sx={{
-          fontSize: {
-            xl: "28px",
-            lg: "26px",
-            md: "22px",
-            sm: "20px",
-            xs: "16px",
-          },
-          textAlign: "center",
-          width: {
-            xl: "80%",
-            lg: "80%",
-            md: "80%",
-            sm: "95%",
-            xs: "90%",
-          },
-          color: "white",
-          paddingBottom: "20px",
-          margin: "auto",
-        }}
-      >
-        At RCotterill PT, I want to help men and women that have felt like
-        they've been spinning their wheels with their fitness and health. I
-        grasp that different diets can seem attractive and trying various
-        solutions to find the style of eating that's right for you seems
-        essential - but it can also slow your progress down while you are
-        spending time on trial and error. ​​
-      </Typography>
+
       <Button variant="outlined" pill component={Link} to="/services">
         Let's Begin!
       </Button>

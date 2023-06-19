@@ -61,7 +61,7 @@ const Contact = (props) => {
                 xs: "100%",
               },
               marginTop: {
-                xl: "185px",
+                xl: "50px",
                 lg: "50px",
                 md: "30px",
                 sm: "0px",

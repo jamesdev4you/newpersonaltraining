@@ -91,7 +91,9 @@ const HomeTestimonial = () => {
         {" "}
         <Box
           sx={{
+            width: "95%",
             backgroundColor: "primary.light",
+            margin: "auto",
           }}
         >
           <motion.div
@@ -178,7 +180,7 @@ const HomeTestimonial = () => {
                 >
                   <Box
                     sx={{
-                      width: "48.5%",
+                      width: "48.2%",
 
                       height: {
                         xl: "500px",
@@ -196,7 +198,7 @@ const HomeTestimonial = () => {
                   ></Box>
                   <Box
                     sx={{
-                      width: "48.5%",
+                      width: "48.2%",
                       height: {
                         xl: "500px",
                         lg: "300px",

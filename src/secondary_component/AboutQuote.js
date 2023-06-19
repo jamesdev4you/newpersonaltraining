@@ -38,13 +38,9 @@ const AboutQuote = () => {
         },
       }}
     >
-      <motion.div
-        ref={ref}
-        animate={controls}
-        variants={squareVariants}
-        initial="hidden"
-      >
+      <motion.div animate={controls} variants={squareVariants} initial="hidden">
         <Typography
+          ref={ref}
           sx={{
             width: {
               xl: "70%",
@@ -70,26 +66,26 @@ const AboutQuote = () => {
           "Mind over matter – focus your mind, your body will follow and you’ll
           be amazed at what you actually achieve."
         </Typography>
-
-        <Typography
-          sx={{
-            width: "100%",
-            margin: "0 20px",
-            fontFamily: "Ubuntu",
-            color: "white",
-            textAlign: "center",
-            fontSize: {
-              xl: "38px",
-              lg: "30px",
-              md: "26px",
-              sm: "24px",
-              xs: "20px",
-            },
-          }}
-        >
-          - Edvania
-        </Typography>
       </motion.div>
+
+      <Typography
+        sx={{
+          width: "100%",
+          margin: "0 20px",
+          fontFamily: "Ubuntu",
+          color: "white",
+          textAlign: "center",
+          fontSize: {
+            xl: "38px",
+            lg: "30px",
+            md: "26px",
+            sm: "24px",
+            xs: "20px",
+          },
+        }}
+      >
+        - Edvania
+      </Typography>
     </Box>
   );
 };

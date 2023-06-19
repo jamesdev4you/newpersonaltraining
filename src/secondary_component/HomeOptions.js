@@ -228,6 +228,7 @@ const HomeOptions = () => {
                   xs: "14px",
                 },
                 color: "white",
+                height: "50%",
               }}
             >
               {item.desc}

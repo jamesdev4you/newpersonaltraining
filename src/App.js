@@ -47,7 +47,7 @@ function App() {
   const headerOptions = [
     {
       firstSen: "Transform yourself",
-      secondSen: "into the Perfect you",
+      secondSen: "into the perfect you",
       thirdParagraph:
         "Providing services in Yoga, Personal Training, and Nutrition",
       buttonSen: "Learn More",
@@ -56,7 +56,7 @@ function App() {
     },
     {
       firstSen: "Transform yourself",
-      secondSen: "into the Perfect you",
+      secondSen: "into the perfect you",
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
@@ -65,7 +65,7 @@ function App() {
     },
     {
       firstSen: "Transform yourself",
-      secondSen: "into the Perfect you",
+      secondSen: "into the perfect you",
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
@@ -74,7 +74,7 @@ function App() {
     },
     {
       firstSen: "Transform yourself",
-      secondSen: "into the Perfect you",
+      secondSen: "into the perfect you",
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
@@ -83,7 +83,7 @@ function App() {
     },
     {
       firstSen: "Transform yourself",
-      secondSen: "into the Perfect you",
+      secondSen: "into the perfect you",
       thirdParagraph:
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
