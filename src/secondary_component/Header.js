@@ -19,7 +19,7 @@ export default function Header(props) {
           lg: "100vh",
           md: "100vh",
           sm: "100vh",
-          xs: "70vh",
+          xs: "100vh",
         },
       }}
     >

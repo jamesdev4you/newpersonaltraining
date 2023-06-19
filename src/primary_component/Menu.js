@@ -37,7 +37,7 @@ export default function Menu() {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center", backgroundColor: "primary.main" }}
     >
-      <img src={Logo} alt="yooo" style={{ height: "75px", width: "150px" }} />
+      <img src={Logo} alt="yooo" style={{ height: "150px", width: "150px" }} />
       <Divider sx={{ backgroundColor: "primary.main" }} />
       <List>
         {navItems.map((item) => (
