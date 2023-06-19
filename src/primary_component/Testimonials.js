@@ -62,7 +62,7 @@ const Testimonials = (props) => {
       <Box
         sx={{
           width: "100%",
-          height: "2000px",
+          height: "100%",
           backgroundColor: "primary.light",
           padding: "50px 0px",
         }}
@@ -70,11 +70,12 @@ const Testimonials = (props) => {
         <Box
           sx={{
             width: "100%",
-            height: "100%",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-around",
             alignItems: "center",
+            gap: "40px",
           }}
           ref={ref}
         >
@@ -87,11 +88,32 @@ const Testimonials = (props) => {
               >
                 <Box
                   sx={{
-                    height: "300px",
-                    width: "80%",
+                    height: "auto",
+                    width: {
+                      xl: "80%",
+                      lg: "80%",
+                      md: "80%",
+                      sm: "90%",
+                      xs: "90%",
+                    },
+                    padding: "20px",
                     borderRadius: "15px",
                     backgroundColor: "primary.dark",
                     display: "flex",
+                    flexDirection: {
+                      xl: "row",
+                      lg: "row",
+                      md: "row",
+                      sm: "column",
+                      xs: "column",
+                    },
+                    gap: {
+                      xl: "0px",
+                      lg: "0px",
+                      md: "0px",
+                      sm: "15px",
+                      xs: "15px",
+                    },
                     justifyContent: "space-around",
                     alignItems: "center",
                     margin: "auto",
@@ -101,21 +123,49 @@ const Testimonials = (props) => {
                 >
                   <Box
                     sx={{
-                      height: "240px",
-                      width: "240px",
+                      height: {
+                        xl: "240px",
+                        lg: "200px",
+                        md: "180px",
+                        sm: "140px",
+                        xs: "140px",
+                      },
+                      width: {
+                        xl: "240px",
+                        lg: "200px",
+                        md: "180px",
+                        sm: "140px",
+                        xs: "140px",
+                      },
                       borderRadius: "50%",
                       backgroundImage: `url(${image})`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       backgroundPosition: "right",
-                      border: "5px solid",
+                      border: "3px solid",
                       borderColor: "error.light",
                     }}
                   ></Box>
-                  <Box sx={{ width: "70%" }}>
+                  <Box
+                    sx={{
+                      width: {
+                        xl: "60%",
+                        lg: "60%",
+                        md: "60%",
+                        sm: "100%",
+                        xs: "100%",
+                      },
+                    }}
+                  >
                     <Typography
                       sx={{
-                        fontSize: "24px",
+                        fontSize: {
+                          xl: "24px",
+                          lg: "20px",
+                          md: "18px",
+                          sm: "16px",
+                          xs: "14px",
+                        },
                         textAlign: "center",
 
                         color: "white",
@@ -125,8 +175,20 @@ const Testimonials = (props) => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "28px",
-                        textAlign: "right",
+                        fontSize: {
+                          xl: "26px",
+                          lg: "22px",
+                          md: "20px",
+                          sm: "18px",
+                          xs: "22px",
+                        },
+                        textAlign: {
+                          xl: "right",
+                          lg: "right",
+                          md: "right",
+                          sm: "center",
+                          xs: "center",
+                        },
                         paddingTop: "15px",
                         color: "error.light",
                       }}
