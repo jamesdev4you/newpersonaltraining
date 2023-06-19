@@ -155,7 +155,7 @@ const HomeTestimonial = () => {
                 >
                   <Box
                     sx={{
-                      width: "47%",
+                      width: "48%",
 
                       height: {
                         xl: "500px",
@@ -173,7 +173,7 @@ const HomeTestimonial = () => {
                   ></Box>
                   <Box
                     sx={{
-                      width: "47%",
+                      width: "49%",
                       height: {
                         xl: "500px",
                         lg: "300px",
@@ -262,7 +262,7 @@ const HomeTestimonial = () => {
               <Box
                 sx={{
                   width: {
-                    xl: "23%",
+                    xl: "22.8%",
                     lg: "21%",
                     md: "45%",
                     sm: "45%",
