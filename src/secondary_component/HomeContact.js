@@ -83,14 +83,14 @@ export default function HomeContact() {
             sx={{
               height: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
               },
               width: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
@@ -108,14 +108,14 @@ export default function HomeContact() {
             sx={{
               height: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
               },
               width: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
@@ -133,14 +133,14 @@ export default function HomeContact() {
             sx={{
               height: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
               },
               width: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
@@ -159,14 +159,14 @@ export default function HomeContact() {
             sx={{
               height: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",
               },
               width: {
                 xl: "120px",
-                lg: "120px",
+                lg: "100px",
                 md: "60px",
                 sm: "60px",
                 xs: "40px",

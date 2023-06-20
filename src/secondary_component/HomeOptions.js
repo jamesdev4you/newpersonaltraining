@@ -91,7 +91,7 @@ const HomeOptions = () => {
               color: "white",
               fontSize: {
                 xl: "70px",
-                lg: "60px",
+                lg: "70px",
                 md: "60px",
                 sm: "54px",
                 xs: "33px",
@@ -116,7 +116,7 @@ const HomeOptions = () => {
               color: "error.main",
               fontSize: {
                 xl: "60px",
-                lg: "50px",
+                lg: "60px",
                 md: "50px",
                 sm: "44px",
                 xs: "23px",
@@ -190,7 +190,7 @@ const HomeOptions = () => {
         {Options.map((item) => (
           <Box
             sx={{
-              height: { xl: "550px", lg: "550px", md: "550px", sm: "650px" },
+              height: { xl: "550px", lg: "500px", md: "550px", sm: "650px" },
               width: { xl: "28%", lg: "30%", md: "50%", sm: "70%", xs: "80%" },
               zIndex: "1",
               paddingBottom: "50px",
