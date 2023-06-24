@@ -100,13 +100,7 @@ const HomeOptions = () => {
           >
             Achieve Greatness
           </Typography>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          animate={controls}
-          variants={squareVariants}
-          initial="hidden"
-        >
+
           <Typography
             variant="h3"
             align="center"
@@ -125,13 +119,7 @@ const HomeOptions = () => {
           >
             Personal Training in Westchase
           </Typography>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          animate={controls}
-          variants={squareVariants}
-          initial="hidden"
-        >
+
           <Typography
             sx={{
               fontFamily: "Ubuntu",

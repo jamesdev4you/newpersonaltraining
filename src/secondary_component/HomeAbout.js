@@ -73,7 +73,6 @@ const HomeAbout = () => {
           }}
         >
           <motion.div
-            ref={ref}
             animate={controls}
             variants={squareVariants}
             initial="hidden"
@@ -92,7 +91,7 @@ const HomeAbout = () => {
               }}
             >
               {" "}
-              Online & Individual Personal Trainer in Fareham
+              Online & Real Life Personal Trainer in Tampa
             </Typography>
             <Typography
               color="white"
@@ -106,42 +105,25 @@ const HomeAbout = () => {
                   xs: "16px",
                 },
               }}
+              ref={ref}
             >
               {" "}
-              Throughout my fitness journey, I’ve helped hundreds of people to
-              improve their relationship with food and their bodies. But more
-              than that, they've extended their lives and put the spark back
-              into their training. While variety is essential to keep you
-              interested - too much variety might inhibit your progress. That's
-              why, as a personal trainer in Fareham, I want to help you stick
-              with a training programme long enough that you see real results.
+              During my experience in the realm of fitness, I have had the
+              privilege of assisting numerous individuals in enhancing their
+              connection with nourishment and their physical well-being.
+              However, the impact of my guidance goes beyond that—it has
+              revitalized their training and extended their lifespans. Although
+              incorporating diversity is crucial for maintaining enthusiasm,
+              excessive variation can impede progress. This is precisely why, as
+              a personal trainer situated in Tampa, I am dedicated to supporting
+              you in adhering to a training regimen for a significant duration,
+              enabling you to witness tangible outcomes.
             </Typography>
-            <Typography
-              color="white"
-              sx={{
-                fontFamily: "Normal",
-                fontSize: {
-                  xl: "20px",
-                  lg: "20px",
-                  md: "16px",
-                  sm: "16px",
-                  xs: "16px",
-                },
-              }}
-            >
-              {" "}
-              Throughout my fitness journey, I’ve helped hundreds of people to
-              improve their relationship with food and their bodies. But more
-              than that, they've extended their lives and put the spark back
-              into their training. But they soon learn that the flexibility,
-              nutritional coaching and support they receive has a positive
-              knock-on effect into the rest of their lives. They're more
-              productive at work.
-            </Typography>
+
+            <Button variant="outlined" pill component={Link} to="/about">
+              Find out more!
+            </Button>
           </motion.div>
-          <Button variant="outlined" pill component={Link} to="/about">
-            Find out more!
-          </Button>
         </Box>
         <Box
           sx={{
@@ -156,8 +138,7 @@ const HomeAbout = () => {
             backgroundImage: `url(${PersonalTraining})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
+            backgroundPosition: "70%",
           }}
         ></Box>
       </Box>

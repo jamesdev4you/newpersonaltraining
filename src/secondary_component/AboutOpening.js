@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button } from "../custom_components/Styled";
-import Header from "../assets/header.jpg";
+import About from "../assets/About.jpg";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../index.css";
@@ -52,7 +52,7 @@ const AboutOpening = () => {
           flexDirection: "column",
 
           gap: "50px",
-          paddingBottom: "100px",
+          paddingBottom: "40px",
         }}
       >
         <motion.div
@@ -68,7 +68,7 @@ const AboutOpening = () => {
                 lg: "30px",
                 md: "34px",
                 sm: "34px",
-                xs: "24px",
+                xs: "34px",
               },
               margin: "auto",
               textAlign: "center",
@@ -83,22 +83,22 @@ const AboutOpening = () => {
           <Box
             sx={{
               height: {
-                xl: "320px",
-                lg: "350px",
+                xl: "400px",
+                lg: "400px",
                 md: "250px",
                 sm: "250px",
                 xs: "250px",
               },
               borderRadius: "50%",
               width: {
-                xl: "320px",
-                lg: "350px",
+                xl: "400px",
+                lg: "400px",
                 md: "250px",
                 sm: "250px",
                 xs: "250px",
               },
               margin: "50px auto",
-              backgroundImage: `url(${Header})`,
+              backgroundImage: `url(${About})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "right",
@@ -143,6 +143,7 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Ubuntu",
+              paddingTop: "5px",
             }}
           >
             Meet your trainer
@@ -160,13 +161,15 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Normal",
+              paddingTop: "5px",
             }}
           >
-            There was a time where I felt uncomfortable in my clothes and my
-            skin. I knew that I was carrying a little bit of extra weight
-            compared to my friends around my age, and looking back now, it
-            wasn't even that much. But it was enough at the time to knock my
-            confidence - it got me down and I tried to diet.
+            Hey I'm Edvania! Thanks for stopping by this website! I'm originally
+            hailing from Brazil, but made a bold decision to chase my dreams and
+            relocate to America. However, as I immersed myself in a newfound
+            corporate job, I quickly realized that it didn't align with my true
+            self. Searching for solace and an outlet for my mental well-being, I
+            turned to the world of fitness.
           </Typography>
           <Typography
             sx={{
@@ -181,13 +184,16 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Normal",
+              paddingTop: "5px",
             }}
           >
-            I didn't know what I was doing. I had no direction and without a
-            plan, I made a lot of mistakes. I started to learn about nutrition
-            and making slightly better food choices. I learned about training
-            plans and making sure that the time I was spending in the gym was
-            effective.
+            Little did I know, this exploration would ignite an unyielding
+            passion within me. I discovered that not only did working out
+            positively impact my mental health, but it also became my driving
+            force. It awakened a profound desire to assist others in achieving
+            their fitness aspirations and unlocking their full potential. This
+            passion transformed me into a dedicated personal trainer, devoted to
+            guiding my clients along their unique fitness journeys.
           </Typography>
           <Typography
             sx={{
@@ -202,41 +208,16 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Normal",
+              paddingTop: "5px",
             }}
           >
-            Then, in 2002 I joined the military. That was a pivotal time in my
-            life because now my fitness wasn't just about how I looked and felt,
-            it could have meant life or death for myself, my friends and
-            colleagues in my Company. I took it seriously and got military fit.
-            It was a life-changing journey and for the first time, I felt like I
-            fitted in. Throughout my career I completed a number of arduous
-            courses, including P-Company and even finished three back to back
-            ultra-marathons which tested my mental and physical ability. In
-            2011, I then became a Physical Training Instructor within the Army.
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: {
-                xl: "20px",
-                lg: "20px",
-                md: "16px",
-                sm: "16px",
-                xs: "16px",
-              },
-              textAlign: "left",
-              width: "100%",
-              color: "white",
-              fontFamily: "Normal",
-            }}
-          >
-            I was in the military for over 15 years. When I left, I took a
-            high-profile management position with a lot of responsibility and
-            stress. This led me away from my core passion of fitness and helping
-            others achieve their health and wellbeing goals. I was in that job
-            for two years, where the long and demanding hours meant my health
-            took a back seat again. I knew that I didn't want to live that life
-            and wanted to do something I have always been passionate about -
-            ultimately leading me back into the fitness industry.
+            With my Brazilian background, I bring a vibrant energy and a unique
+            perspective to my training approach. My experiences of cultural
+            fusion have cultivated a deep understanding of diverse body types,
+            motivations, and aspirations. I embrace the power of personalized
+            fitness solutions, tailored to each individual's needs, ensuring
+            that every client receives a customized program designed for optimal
+            results.
           </Typography>
         </motion.div>
       </Box>

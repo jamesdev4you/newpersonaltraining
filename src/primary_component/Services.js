@@ -3,6 +3,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
+import barbells from "../assets/barbells.jpg";
+import stretching from "../assets/picture-18.jpg";
+import food from "../assets/pexels-sam-lion-5709296.jpg";
 import AboutQuote from "../secondary_component/AboutQuote";
 import AboutTestimonial from "../secondary_component/AboutTestimonial";
 import HomeContact from "../secondary_component/HomeContact";
@@ -13,51 +16,51 @@ import "../index.css";
 const Services = (props) => {
   const serviceOptions = [
     {
-      image: Header2,
+      image: stretching,
       title: "Yoga",
-      price: "FROM $35/WEEK",
-      plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
+      price: "FROM $40/WEEK",
+      plan: "Every journey begins with an initial consultation call, paving the way for a one-week commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
       description:
-        "Couples Coaching is ideal if you work harder and feel more motivated training with your partner/friend and want to make huge savings on personal training costs. You'll work through the individualised nutrition program I create for you, and exercise alongside your partner to accomplish your health and fitness goals.",
-      pointOne: "Monthly Health & Fitness Testing",
-      pointTwo: "Monthly Health & Fitness Testing",
-      pointThree: "Monthly Health & Fitness Testing",
-      pointFour: "Monthly Health & Fitness Testing",
-      pointFive: "Monthly Health & Fitness Testing",
-      pointSix: "Monthly Health & Fitness Testing",
-      pointSeven: "Monthly Health & Fitness Testing",
+        "Discover the transformative power of yoga with our dedicated personal trainer. Enhance flexibility, strength, and inner balance while experiencing relaxation, stress relief, and improved overall well-being through our tailored yoga sessions.",
+      pointOne: "Flexibility: Enhances body's suppleness.",
+      pointTwo: "Strength: Builds physical resilience.",
+      pointThree: "Balance: Improves overall stability.",
+      pointFour: "Stress Relief: Calms and relaxes.",
+      pointFive: "Focus: Enhances mental concentration.",
+      pointSix: "Posture: Corrects body alignment.",
+      pointSeven: "Well-being: Promotes holistic health.",
       href: "/Yoga",
     },
     {
-      image: Header2,
+      image: barbells,
       title: "Strength Training",
-      price: "FROM $35/WEEK",
-      plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
+      price: "FROM $20/WEEK",
+      plan: "Every journey begins with an initial consultation call, paving the way for a one-week commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
       description:
-        "Couples Coaching is ideal if you work harder and feel more motivated training with your partner/friend and want to make huge savings on personal training costs. You'll work through the individualised nutrition program I create for you, and exercise alongside your partner to accomplish your health and fitness goals.",
-      pointOne: "Monthly Health & Fitness Testing",
-      pointTwo: "Monthly Health & Fitness Testing",
-      pointThree: "Monthly Health & Fitness Testing",
-      pointFour: "Monthly Health & Fitness Testing",
-      pointFive: "Monthly Health & Fitness Testing",
-      pointSix: "Monthly Health & Fitness Testing",
-      pointSeven: "Monthly Health & Fitness Testing",
+        "Unleash your strength potential with our experienced personal trainer. Build muscle, increase power, and achieve your weight lifting goals through customized training programs designed to optimize results and elevate your fitness journey.",
+      pointOne: "Muscle Growth: Promotes muscular development.",
+      pointTwo: "Strength Gain: Increases physical power.",
+      pointThree: "Bone Health: Enhances skeletal density.",
+      pointFour: "Fat Loss: Burns excess fat.",
+      pointFive: "Metabolism Boost: Accelerates calorie-burning.",
+      pointSix: "Injury Prevention: Reduces injury risk.",
+      pointSeven: "Functional Fitness: Improves everyday abilities.",
       href: "/PersonalTraining",
     },
     {
-      image: Header2,
+      image: food,
       title: "Nutrition",
-      price: "FROM $35/WEEK",
-      plan: "All plans start with a consultation followed by an initial one month commitment, after which there is the opportunity to make longer commitments and save money",
+      price: "FROM $21/WEEK",
+      plan: "Every journey begins with an initial consultation call, paving the way for a commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
       description:
-        "Couples Coaching is ideal if you work harder and feel more motivated training with your partner/friend and want to make huge savings on personal training costs. You'll work through the individualised nutrition program I create for you, and exercise alongside your partner to accomplish your health and fitness goals.",
-      pointOne: "Monthly Health & Fitness Testing",
-      pointTwo: "Monthly Health & Fitness Testing",
-      pointThree: "Monthly Health & Fitness Testing",
-      pointFour: "Monthly Health & Fitness Testing",
-      pointFive: "Monthly Health & Fitness Testing",
-      pointSix: "Monthly Health & Fitness Testing",
-      pointSeven: "Monthly Health & Fitness Testing",
+        "Transform your health with personalized nutrition planning guided by our expert personal trainer. Optimize your diet, achieve your goals, and unlock your full potential through a tailored approach to fueling your body for success.",
+      pointOne: "Energy Boost: Enhances vitality levels.",
+      pointTwo: "Weight Management: Facilitates healthy weight.",
+      pointThree: "Nutrient Optimization: Maximizes essential nutrients.",
+      pointFour: "Digestive Health: Improves gut function.",
+      pointFive: "Disease Prevention: Reduces health risks.",
+      pointSix: "Mood Enhancement: Supports emotional well-being.",
+      pointSeven: "Longevity Promotion: Fosters longevity.",
       href: "/Nutrition",
     },
   ];

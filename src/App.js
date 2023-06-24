@@ -14,7 +14,10 @@ import Yoga from "./service_components/Yoga";
 import Calendar from "./service_components/Calendar";
 import { Routes, Route, Outlet, Link, Router } from "react-router-dom";
 import HeaderImg from "./assets/header.jpg";
-
+import HeaderAbout from "./assets/headerAbout.jpg";
+import HeaderServices from "./assets/picture-14.jpg";
+import HeaderTestimonials from "./assets/picture-64.jpg";
+import HeaderContact from "./assets/picture22.jpg";
 const theme = createTheme({
   shape: {
     pillRadius: 50,
@@ -55,22 +58,30 @@ function App() {
       image: HeaderImg,
     },
     {
-      firstSen: "Transform yourself",
-      secondSen: "into the perfect you",
+      firstSen: "Brazilian Bodybuilder",
+      secondSen: "and personal trainer",
       thirdParagraph:
-        "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
+        "My expertice in fitness makes your dreams become reality",
       buttonSen: "Learn More",
       to: "/services",
-      image: HeaderImg,
+      image: HeaderAbout,
     },
     {
-      firstSen: "Transform yourself",
-      secondSen: "into the perfect you",
-      thirdParagraph:
-        "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
+      firstSen: "Begin you journey &",
+      secondSen: "optimize your health",
+      thirdParagraph: "Choose between Yoga, Personal Training, and Nutrition",
       buttonSen: "Learn More",
       to: "/contact",
-      image: HeaderImg,
+      image: HeaderServices,
+    },
+    {
+      firstSen: "Satisfaction in all",
+      secondSen: "Growth in many",
+      thirdParagraph:
+        "See what my previous and current clients have to say about me!",
+      buttonSen: "Learn More",
+      to: "/services",
+      image: HeaderTestimonials,
     },
     {
       firstSen: "Transform yourself",
@@ -79,16 +90,7 @@ function App() {
         "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
       buttonSen: "Learn More",
       to: "/services",
-      image: HeaderImg,
-    },
-    {
-      firstSen: "Transform yourself",
-      secondSen: "into the perfect you",
-      thirdParagraph:
-        "Providing services in Yoga, Body Building, Personal Training, and Nutrition",
-      buttonSen: "Learn More",
-      to: "/services",
-      image: HeaderImg,
+      image: HeaderContact,
     },
   ];
 

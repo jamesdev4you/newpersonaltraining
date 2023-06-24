@@ -63,8 +63,9 @@ const AboutQuote = () => {
             margin: "auto",
           }}
         >
-          "Mind over matter – focus your mind, your body will follow and you’ll
-          be amazed at what you actually achieve."
+          "Harness the power of your mind, and watch your body effortlessly
+          follow suit, unveiling the astonishing achievements you are capable
+          of."
         </Typography>
       </motion.div>
 

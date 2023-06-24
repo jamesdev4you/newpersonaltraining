@@ -113,7 +113,7 @@ export default function Footer() {
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
             <Link
-              href="/services"
+              href="/personaltraining"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Body Building
@@ -122,7 +122,7 @@ export default function Footer() {
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
             <Link
-              href="/services"
+              href="/nutrition"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Nutrition
@@ -130,10 +130,7 @@ export default function Footer() {
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/services"
-              sx={{ textDecoration: "none", color: "black" }}
-            >
+            <Link href="/yoga" sx={{ textDecoration: "none", color: "black" }}>
               Yoga
             </Link>{" "}
           </Typography>
@@ -215,6 +212,14 @@ export default function Footer() {
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
             Fri: 10:00am-10:00pm{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            Sat: 10:00am-10:00pm{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}>
+            {" "}
+            Sun: 10:00am-10:00pm{" "}
           </Typography>
         </Box>
       </Box>

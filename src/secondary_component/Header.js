@@ -93,8 +93,8 @@ export default function Header(props) {
           backgroundImage: `url(${props.headerOp.image})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "right",
-          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

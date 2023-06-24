@@ -4,6 +4,12 @@ import Typography from "@mui/material/Typography";
 import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
 import Header from "../assets/header.jpg";
+import gympic6 from "../assets/picture-38.jpg";
+import gympic5 from "../assets/picture-27.jpg";
+import gympic4 from "../assets/picture-48.jpg";
+import gympic3 from "../assets/picture-30.jpg";
+import gympic1 from "../assets/picture-22.jpg";
+import gympic2 from "../assets/picture-52.jpg";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -23,7 +29,7 @@ const AboutTestimonial = () => {
     }
   }, [controls, inView]);
 
-  const aboutPictures = [Header, Header, Header, Header, Header, Header];
+  const aboutPictures = [gympic6, gympic5, gympic4, gympic3, gympic1, gympic2];
 
   return (
     <Box
@@ -82,12 +88,11 @@ const AboutTestimonial = () => {
             margin: "auto",
           }}
         >
-          At RCotterill PT, I want to help men and women that have felt like
-          they've been spinning their wheels with their fitness and health. I
-          grasp that different diets can seem attractive and trying various
-          solutions to find the style of eating that's right for you seems
-          essential - but it can also slow your progress down while you are
-          spending time on trial and error. ​​
+          Driven by my own transformation and armed with extensive knowledge and
+          expertise, I'm committed to empowering others to fulfill their fitness
+          dreams. Whether you seek to boost your strength, shed unwanted pounds,
+          or enhance your overall well-being, I'll be your unwavering ally,
+          motivating you every step of the way on your path to success.
         </Typography>
       </motion.div>
       <Box
@@ -139,12 +144,12 @@ const AboutTestimonial = () => {
                   lg: "45%",
                   md: "45%",
                   sm: "33%",
-                  xs: "200px",
+                  xs: "15%",
                 },
-                backgroundImage: `url(${Header})`,
+                backgroundImage: `url(${item})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: "right",
+                backgroundPosition: "center",
               }}
             ></Box>
           );

@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import before1 from "../assets/before1.jpg";
+import after1 from "../assets/after1.jpg";
 import PersonalTraining from "../assets/personaltraining.jpg";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../index.css";
+import { ImageNotSupportedOutlined } from "@mui/icons-material";
 
 const squareVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
@@ -23,8 +26,8 @@ const HomeTestimonial = () => {
 
   const beforeAfterTestimonials = [
     {
-      before: PersonalTraining,
-      after: PersonalTraining,
+      before: before1,
+      after: after1,
       testimonial:
         "❝ Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞",
       name: "- James Boyle",
@@ -116,7 +119,7 @@ const HomeTestimonial = () => {
                 },
               }}
             >
-              The Results You Can Expect
+              Your Dreams Will Come True!
             </Typography>
             <Typography
               sx={{
@@ -133,14 +136,15 @@ const HomeTestimonial = () => {
                 },
               }}
             >
-              The Armoury would be nothing without the men and women that have
-              put their trust in us over the last 10 years, and working together
-              we've had the privilege of seeing some truly tremendous
-              accomplishments. Whether that means gaining the confidence to wear
-              a two-piece at the beach after having their first child, fitting
-              into the suit they always imagined they'd wear for their daughters
-              wedding, or the everyday confidence that permeates everything they
-              do, installed through the effort they've put in.{" "}
+              The success of Brazilian Fitness is deeply intertwined with the
+              individuals who have placed their faith in us throughout the past
+              four years. Through our collaborative efforts, we have been
+              fortunate to witness remarkable achievements. These triumphs range
+              from empowering women to confidently don a two-piece swimsuit,
+              fulfilling the dream of reducing a long-standing battle against a
+              waistline, to instilling a daily sense of confidence that
+              permeates every aspect of their lives, a direct result of their
+              unwavering dedication and hard work.
             </Typography>
           </motion.div>
         </Box>
@@ -192,8 +196,11 @@ const HomeTestimonial = () => {
                       backgroundImage: `url(${before})`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
-                      backgroundPosition: "right",
+                      backgroundPosition: "top",
                       marginBottom: "15px",
+                      borderRadius: "15px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
                     }}
                   ></Box>
                   <Box
@@ -209,8 +216,11 @@ const HomeTestimonial = () => {
                       backgroundImage: `url(${after})`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
-                      backgroundPosition: "right",
+                      backgroundPosition: "top",
                       marginBottom: "15px",
+                      borderRadius: "15px",
+                      boxShadow:
+                        "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
                     }}
                   ></Box>
                   <Box
@@ -219,10 +229,11 @@ const HomeTestimonial = () => {
                       height: "auto",
                       padding: "10px",
                       backgroundColor: "primary.dark",
-                      border: "1px solid black",
+
                       borderRadius: "15px",
                       boxShadow:
-                        "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+                        "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "start",
@@ -300,12 +311,12 @@ const HomeTestimonial = () => {
                     sm: "auto",
                     xs: "auto",
                   },
-                  backgroundColor: "black",
+                  backgroundColor: "primary.dark",
                   padding: "15px",
-                  border: "1px solid black",
+
                   borderRadius: "15px",
                   boxShadow:
-                    "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+                    "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "start",
