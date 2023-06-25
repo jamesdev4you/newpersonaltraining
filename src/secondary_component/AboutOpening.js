@@ -120,7 +120,9 @@ const AboutOpening = () => {
             sm: "90%",
             xs: "90%",
           },
-          margin: "auto",
+          alignItems: "center",
+          justifyContent: "center",
+
           gap: "30px",
         }}
       >
@@ -143,7 +145,6 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Ubuntu",
-              paddingTop: "5px",
             }}
           >
             Meet your trainer
@@ -161,7 +162,7 @@ const AboutOpening = () => {
               width: "100%",
               color: "white",
               fontFamily: "Normal",
-              paddingTop: "5px",
+              paddingTop: "50px",
             }}
           >
             Hey I'm Edvania! Thanks for stopping by this website! I'm originally

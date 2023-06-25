@@ -3,11 +3,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import before1 from "../assets/before1.jpg";
 import after1 from "../assets/after1.jpg";
+import before2 from "../assets/before2.jpg";
+import after2 from "../assets/after2.jpg";
 import PersonalTraining from "../assets/personaltraining.jpg";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../index.css";
 import { ImageNotSupportedOutlined } from "@mui/icons-material";
+import { Button } from "../custom_components/Styled";
+import { Link } from "react-router-dom";
 
 const squareVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
@@ -30,15 +34,15 @@ const HomeTestimonial = () => {
       after: after1,
       testimonial:
         "❝ Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞",
-      name: "- James Boyle",
+      name: "- Nanda",
       rating: "⭐⭐⭐⭐⭐",
     },
     {
-      before: PersonalTraining,
-      after: PersonalTraining,
+      before: before2,
+      after: after2,
       testimonial:
-        "❝ Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞",
-      name: "- James Boyle",
+        "❝ I worked with Edgy all through Covid on my strength and eating habits and now feel extemely confident! I loved her ability to care about others! ❞",
+      name: "- Julia Harris",
       rating: "⭐⭐⭐⭐⭐",
     },
   ];
@@ -46,8 +50,8 @@ const HomeTestimonial = () => {
   const testimonials = [
     {
       testimonial:
-        "❝Just wanted to share a quick note and let you know that you guys do a really good job.❞",
-      name: "- James Boyle",
+        "❝Results were astronomical! Chest, Bicepts, Triceps, robust with waist trimmed down by four inches!❞",
+      name: "- Ron Felber",
       rating: "⭐⭐⭐⭐⭐",
     },
     {
@@ -360,6 +364,9 @@ const HomeTestimonial = () => {
               </Box>
             );
           })}
+          <Button variant="outlined" pill component={Link} to="/about">
+            Start Today!
+          </Button>
         </Box>
       </Box>
     </Box>

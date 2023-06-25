@@ -78,7 +78,7 @@ const SingleTestimonial = (props) => {
             backgroundImage: `url(${props.image})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "right",
+            backgroundPosition: "top",
             border: "3px solid",
             borderColor: "error.light",
           }}

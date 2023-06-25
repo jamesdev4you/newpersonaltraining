@@ -7,26 +7,29 @@ import HomeContact from "../secondary_component/HomeContact";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SingleTestimonial from "../secondary_component/SingleTestimonial";
+import after1 from "../assets/after1.jpg";
+import after2 from "../assets/after2.jpg";
+import testimonialPic3 from "../assets/testimonial3.jpg";
 
 const Testimonials = (props) => {
   const testimonialInformation = [
     {
-      image: Header2,
+      image: after1,
       testimonial:
-        "At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health. I grasp that different diets can seem attractive and trying various solutions to find the style of eating that's right for you seems essential - but it can also slow your progress down while you are spending time on trial and error.",
-      name: "- James Boyle",
+        "Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all.",
+      name: "- Nanda",
     },
     {
-      image: Header2,
+      image: after2,
       testimonial:
-        "At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health. I grasp that different diets can seem attractive and trying various solutions to find the style of eating that's right for you seems essential - but it can also slow your progress down while you are spending time on trial and error.",
-      name: "- James Boyle",
+        "I worked with Edgy all through Covid on my strength and eating habits and now feel extemely confident! I loved her and especially her ability to care about others! ",
+      name: "- Julia Harris",
     },
     {
-      image: Header2,
+      image: testimonialPic3,
       testimonial:
-        "At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health. I grasp that different diets can seem attractive and trying various solutions to find the style of eating that's right for you seems essential - but it can also slow your progress down while you are spending time on trial and error.",
-      name: "- James Boyle",
+        "Edvania is simply the best! My results were astonishing: chest, biceps, tricepts, robust with waist trimmed down by four inches. Better than I ever imagined possible!",
+      name: "- Ron Felber",
     },
     {
       image: Header2,

@@ -50,7 +50,7 @@ const HomeAbout = () => {
             xs: "reverse-row",
           },
           flexWrap: "wrap",
-          alignItems: "center",
+          alignItems: "start",
           justifyContent: "center",
           gap: "50px",
         }}
@@ -103,6 +103,13 @@ const HomeAbout = () => {
                   md: "16px",
                   sm: "16px",
                   xs: "16px",
+                },
+                padding: {
+                  xl: "20px 0px",
+                  lg: "20px 0px",
+                  md: "0px",
+                  sm: "0px",
+                  xs: "0px",
                 },
               }}
               ref={ref}

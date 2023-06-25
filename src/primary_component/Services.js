@@ -95,8 +95,8 @@ const Services = (props) => {
             },
             margin: "auto",
             padding: {
-              xl: "100px",
-              lg: "100px",
+              xl: "50px",
+              lg: "50px",
               md: "50px 0px",
               sm: "50px 0px",
               xs: "50px 0px",
