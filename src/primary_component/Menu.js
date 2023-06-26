@@ -6,6 +6,7 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
+import { NavLink } from "react-router-dom";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
@@ -25,7 +26,7 @@ const navItems = [
   { text: "Contact", href: "/contact" },
 ];
 
-export default function Menu() {
+export default function Menu(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -42,12 +43,19 @@ export default function Menu() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.text} disablePadding>
-            <ListItemButton
+            <NavLink
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontFamily: "Ubuntu",
+                fontSize: "30px",
+                marginLeft: "5px",
+                textAlign: "left",
+              }}
               to={item.href}
-              sx={{ textAlign: "center", color: "#fff", fontFamily: "Ubuntu" }}
             >
-              <ListItemText primary={item.text} />
-            </ListItemButton>
+              {item.text}
+            </NavLink>
           </ListItem>
         ))}
       </List>
@@ -84,13 +92,19 @@ export default function Menu() {
             sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}
           >
             {navItems.map((item) => (
-              <Button
-                href={item.href}
-                key={item.text}
-                sx={{ paddingLeft: "10px", color: "#fff" }}
+              <NavLink
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontFamily: "Ubuntu",
+                  fontSize: "20px",
+                  marginLeft: "15px",
+                  textAlign: "left",
+                }}
+                to={item.href}
               >
                 {item.text}
-              </Button>
+              </NavLink>
             ))}
           </Box>
         </Toolbar>

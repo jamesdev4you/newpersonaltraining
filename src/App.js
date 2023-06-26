@@ -97,7 +97,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route path="/" element={<Menu />}>
+        <Route path="/" element={<Menu />} color="secondary">
           <Route path="/" element={<Home headerOp={headerOptions[0]} />} />
           <Route
             path="/about"
