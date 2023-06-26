@@ -1,13 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-  TextField,
-  Button,
-} from "@mui/material";
+import { Typography, Grid, TextField, Button } from "@mui/material";
 import "../index.css";
 
 export default function ContactForm() {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Menu from "./primary_component/Menu";
@@ -12,7 +12,7 @@ import Nutrition from "./service_components/Nutrition";
 import PersonalTraining from "./service_components/PersonalTraining";
 import Yoga from "./service_components/Yoga";
 import Calendar from "./service_components/Calendar";
-import { Routes, Route, Outlet, Link, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HeaderImg from "./assets/header.jpg";
 import HeaderAbout from "./assets/headerAbout.jpg";
 import HeaderServices from "./assets/picture-14.jpg";

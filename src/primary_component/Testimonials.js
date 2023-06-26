@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+
 import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
 import HomeContact from "../secondary_component/HomeContact";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import SingleTestimonial from "../secondary_component/SingleTestimonial";
 import after1 from "../assets/after1.jpg";
 import after2 from "../assets/after2.jpg";

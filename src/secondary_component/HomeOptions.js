@@ -10,8 +10,6 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../index.css";
 
-const CertificationList = [];
-
 const Options = [
   {
     logo: <SelfImprovementIcon sx={{ width: "100px", height: "100px" }} />,

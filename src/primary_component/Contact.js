@@ -1,7 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Header2 from "../assets/header.jpg";
 import Header from "../secondary_component/Header";
 import ContactForm from "../secondary_component/ContactForm";
 import HomeContact from "../secondary_component/HomeContact";

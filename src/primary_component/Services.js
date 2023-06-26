@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Header2 from "../assets/header.jpg";
+
 import Header from "../secondary_component/Header";
 import barbells from "../assets/barbells.jpg";
 import stretching from "../assets/picture-18.jpg";
 import food from "../assets/pexels-sam-lion-5709296.jpg";
-import AboutQuote from "../secondary_component/AboutQuote";
-import AboutTestimonial from "../secondary_component/AboutTestimonial";
 import HomeContact from "../secondary_component/HomeContact";
 import { Link } from "react-router-dom";
 import { Button } from "../custom_components/Styled";

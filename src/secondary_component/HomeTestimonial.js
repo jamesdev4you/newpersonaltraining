@@ -5,11 +5,9 @@ import before1 from "../assets/before1.jpg";
 import after1 from "../assets/after1.jpg";
 import before2 from "../assets/before2.jpg";
 import after2 from "../assets/after2.jpg";
-import PersonalTraining from "../assets/personaltraining.jpg";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../index.css";
-import { ImageNotSupportedOutlined } from "@mui/icons-material";
 import { Button } from "../custom_components/Styled";
 import { Link } from "react-router-dom";
 
