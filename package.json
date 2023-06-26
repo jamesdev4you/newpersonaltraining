@@ -1,6 +1,6 @@
 {
   "name": "personaltrainingwebsite",
-  "url": "https://www.brazilianfitness.us",
+  "homepage": "https://www.brazilianfitness.us",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
