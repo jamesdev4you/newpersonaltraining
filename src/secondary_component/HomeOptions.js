@@ -94,6 +94,7 @@ const HomeOptions = () => {
                 sm: "54px",
                 xs: "33px",
               },
+              marginBottom: "15px",
             }}
           >
             Achieve Greatness
@@ -113,6 +114,7 @@ const HomeOptions = () => {
                 sm: "44px",
                 xs: "23px",
               },
+              marginBottom: "15px",
             }}
           >
             Personal Training in Westchase

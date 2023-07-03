@@ -128,7 +128,8 @@ const HomeTestimonial = () => {
                 fontFamily: "Normal",
                 color: "white",
                 textAlign: "center",
-                padding: "50px 0",
+                paddingBottom: "50px",
+                paddingTop: "15px",
                 fontSize: {
                   xl: "20px",
                   lg: "20px",

@@ -42,15 +42,14 @@ export default function Menu(props) {
       <Divider sx={{ backgroundColor: "primary.main" }} />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.text} disablePadding>
+          <ListItem key={item.text} sx={{ margin: "15px 0px" }} disablePadding>
             <NavLink
               style={{
                 textDecoration: "none",
                 color: "white",
                 fontFamily: "Ubuntu",
-                fontSize: "30px",
-                marginLeft: "5px",
-                textAlign: "left",
+                fontSize: "20px",
+                margin: "auto",
               }}
               to={item.href}
             >
@@ -72,16 +71,23 @@ export default function Menu(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "block", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Box
             alt="yooo"
             sx={{
-              display: { sm: "block", xs: "none" },
+              display: { sm: "none", md: "block" },
               height: "75px",
               width: "75px",
+              marginLeft: {
+                xs: "auto",
+                sm: "auto",
+                md: "0",
+                lg: "0",
+                xl: "0",
+              },
               backgroundImage: `url(${Logo})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -89,7 +95,10 @@ export default function Menu(props) {
             }}
           />
           <Box
-            sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}
+            sx={{
+              display: { xs: "none", sm: "none", md: "block" },
+              marginLeft: "auto",
+            }}
           >
             {navItems.map((item) => (
               <NavLink
@@ -98,7 +107,7 @@ export default function Menu(props) {
                   color: "white",
                   fontFamily: "Ubuntu",
                   fontSize: "20px",
-                  marginLeft: "15px",
+                  marginLeft: "35px",
                   textAlign: "left",
                 }}
                 to={item.href}
@@ -118,7 +127,7 @@ export default function Menu(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block", md: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
