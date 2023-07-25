@@ -8,6 +8,7 @@ import SingleTestimonial from "../secondary_component/SingleTestimonial";
 import after1 from "../assets/after1.jpg";
 import after2 from "../assets/after2.jpg";
 import james from "../assets/james.jpg";
+import tom from "../assets/tom.png";
 import testimonialPic3 from "../assets/testimonial3.jpg";
 
 const Testimonials = (props) => {
@@ -31,7 +32,7 @@ const Testimonials = (props) => {
       name: "- Ron Felber",
     },
     {
-      image: Header2,
+      image: tom,
       testimonial:
         "I've completed 10 sessions with Edvania and am amazed by her enthusiasm and dedication! After working out for 20 years without results, I've finally started to see some after my short time with Edvania!",
       name: "- Tom Miller",
