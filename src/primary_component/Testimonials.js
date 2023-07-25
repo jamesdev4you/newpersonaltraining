@@ -34,7 +34,7 @@ const Testimonials = (props) => {
       image: Header2,
       testimonial:
         "I've completed 10 sessions with Edvania and am amazed by her enthusiasm and dedication! After working out for 20 years without results, I've finally started to see some after my short time with Edvania!",
-      name: "- somebody",
+      name: "- Tom Miller",
     },
     {
       image: james,

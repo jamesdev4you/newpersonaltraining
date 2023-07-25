@@ -61,7 +61,7 @@ const HomeTestimonial = () => {
     {
       testimonial:
         "❝After working out for 20 years without results, I've finally started to see some after my short time with Edvania!❞",
-      name: "- James Boyle",
+      name: "- Tom Miller",
       rating: "⭐⭐⭐⭐⭐",
     },
     {

@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 
 export default function Footer() {
@@ -45,43 +46,46 @@ export default function Footer() {
             Pages{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
-            <Link href="/home" sx={{ textDecoration: "none", color: "black" }}>
+            <NavLink to="/home" sx={{ textDecoration: "none", color: "black" }}>
               {" "}
               Home{" "}
-            </Link>
+            </NavLink>
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link href="/about" sx={{ textDecoration: "none", color: "black" }}>
+            <NavLink
+              to="/about"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
               About
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/services"
+            <NavLink
+              to="/services"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Services
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/testimonials"
+            <NavLink
+              to="/testimonials"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Testimonials
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/contact"
+            <NavLink
+              to="/contact"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Contact
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
         </Box>
         <Box
@@ -112,27 +116,27 @@ export default function Footer() {
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/personaltraining"
+            <NavLink
+              to="/personaltraining"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Body Building
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link
-              href="/nutrition"
+            <NavLink
+              to="/nutrition"
               sx={{ textDecoration: "none", color: "black" }}
             >
               Nutrition
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            <Link href="/yoga" sx={{ textDecoration: "none", color: "black" }}>
+            <NavLink to="/yoga" sx={{ textDecoration: "none", color: "black" }}>
               Yoga
-            </Link>{" "}
+            </NavLink>{" "}
           </Typography>
         </Box>
         <Box
