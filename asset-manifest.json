@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af7d9163.css",
-    "main.js": "/static/js/main.2ff7913d.js",
+    "main.js": "/static/js/main.e58cf36b.js",
     "static/media/header.jpg": "/static/media/header.0cc2cd1fe7c107c68630.jpg",
     "static/media/headerAbout.jpg": "/static/media/headerAbout.48d32639187c63f73e15.jpg",
     "static/media/About.jpg": "/static/media/About.882768b30c217f595ee7.jpg",
@@ -18,6 +18,7 @@
     "static/media/picture-64.jpg": "/static/media/picture-64.94f540a39396edec0cea.jpg",
     "static/media/pexels-sam-lion-5709296.jpg": "/static/media/pexels-sam-lion-5709296.bdaa4e1b2244c50dc229.jpg",
     "static/media/picture22.jpg": "/static/media/picture22.edf0a5e3dcd4ed5da118.jpg",
+    "static/media/james.jpg": "/static/media/james.3dc20fb115836448e71f.jpg",
     "static/media/testimonial3.jpg": "/static/media/testimonial3.976e2890a80d74dd4f5b.jpg",
     "static/media/Ubuntu-Regular.ttf": "/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
     "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
@@ -31,10 +32,10 @@
     "static/media/twitter.png": "/static/media/twitter.3a655e8ba8a9efd824c5.png",
     "index.html": "/index.html",
     "main.af7d9163.css.map": "/static/css/main.af7d9163.css.map",
-    "main.2ff7913d.js.map": "/static/js/main.2ff7913d.js.map"
+    "main.e58cf36b.js.map": "/static/js/main.e58cf36b.js.map"
   },
   "entrypoints": [
     "static/css/main.af7d9163.css",
-    "static/js/main.2ff7913d.js"
+    "static/js/main.e58cf36b.js"
   ]
 }
