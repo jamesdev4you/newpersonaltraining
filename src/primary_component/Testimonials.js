@@ -7,6 +7,7 @@ import HomeContact from "../secondary_component/HomeContact";
 import SingleTestimonial from "../secondary_component/SingleTestimonial";
 import after1 from "../assets/after1.jpg";
 import after2 from "../assets/after2.jpg";
+import james from "../assets/james.jpg";
 import testimonialPic3 from "../assets/testimonial3.jpg";
 
 const Testimonials = (props) => {
@@ -32,13 +33,13 @@ const Testimonials = (props) => {
     {
       image: Header2,
       testimonial:
-        "At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health. I grasp that different diets can seem attractive and trying various solutions to find the style of eating that's right for you seems essential - but it can also slow your progress down while you are spending time on trial and error.",
-      name: "- James Boyle",
+        "I've completed 10 sessions with Edvania and am amazed by her enthusiasm and dedication! After working out for 20 years without results, I've finally started to see some after my short time with Edvania!",
+      name: "- somebody",
     },
     {
-      image: Header2,
+      image: james,
       testimonial:
-        "At RCotterill PT, I want to help men and women that have felt like they've been spinning their wheels with their fitness and health. I grasp that different diets can seem attractive and trying various solutions to find the style of eating that's right for you seems essential - but it can also slow your progress down while you are spending time on trial and error.",
+        "I've been having intense shoulder pain throughout my workouts for a couple months, but after a quick short yoga session all of the tension and pain went away!",
       name: "- James Boyle",
     },
   ];

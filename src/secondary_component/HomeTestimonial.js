@@ -60,13 +60,13 @@ const HomeTestimonial = () => {
     },
     {
       testimonial:
-        "❝Just wanted to share a quick note and let you know that you guys do a really good job.❞",
+        "❝After working out for 20 years without results, I've finally started to see some after my short time with Edvania!❞",
       name: "- James Boyle",
       rating: "⭐⭐⭐⭐⭐",
     },
     {
       testimonial:
-        "❝Just wanted to share a quick note and let you know that you guys do a really good job.❞",
+        "❝After a quick short yoga session all of the tension and pain in my shoulders went away!❞",
       name: "- James Boyle",
       rating: "⭐⭐⭐⭐⭐",
     },

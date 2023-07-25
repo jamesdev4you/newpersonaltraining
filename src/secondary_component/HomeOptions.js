@@ -69,7 +69,7 @@ const HomeOptions = () => {
           flexDirection: "column",
           justifyContent: "start",
           alignItems: "center",
-          gap: { xl: "20px", lg: "20px", md: "30px", sm: "20px", xs: "20px" },
+          gap: { xl: "20px", lg: "20px", md: "30px", sm: "30px", xs: "30px" },
           margin: "100px 0px",
           backgroundColor: "primary.light",
         }}
