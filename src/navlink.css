@@ -7,3 +7,16 @@ a.nav_link:hover {
   text-decoration: none;
   color: black;
 }
+
+.menu_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 35px;
+  text-align: left;
+}
+
+a.menu_link:hover {
+  cursor: pointer;
+  color: gold;
+}

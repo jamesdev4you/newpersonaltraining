@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import before1 from "../assets/before1.jpg";
-import after1 from "../assets/after1.jpg";
-import before2 from "../assets/before2.jpg";
-import after2 from "../assets/after2.jpg";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import "../index.css";
-import { Button } from "../custom_components/Styled";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import before1 from '../assets/before1.jpg';
+import after1 from '../assets/after1.jpg';
+import before2 from '../assets/before2.jpg';
+import after2 from '../assets/after2.jpg';
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import '../index.css';
+import { Button } from '../custom_components/Styled';
+import { Link } from 'react-router-dom';
 
 const squareVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
@@ -22,7 +22,7 @@ const HomeTestimonial = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [controls, inView]);
 
@@ -32,92 +32,92 @@ const HomeTestimonial = () => {
       after: after1,
       testimonial:
         "❝ Just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. I never have any problem at all. ❞",
-      name: "- Nanda",
-      rating: "⭐⭐⭐⭐⭐",
+      name: '- Nanda',
+      rating: '⭐⭐⭐⭐⭐',
     },
     {
       before: before2,
       after: after2,
       testimonial:
-        "❝ I worked with Edgy all through Covid on my strength and eating habits and now feel extemely confident! I loved her ability to care about others! ❞",
-      name: "- Julia Harris",
-      rating: "⭐⭐⭐⭐⭐",
+        '❝ I worked with Edgy all through Covid on my strength and eating habits and now feel extemely confident! I loved her ability to care about others! ❞',
+      name: '- Julia Harris',
+      rating: '⭐⭐⭐⭐⭐',
     },
   ];
 
   const testimonials = [
     {
       testimonial:
-        "❝Results were astronomical! Chest, Bicepts, Triceps, robust with waist trimmed down by four inches!❞",
-      name: "- Ron Felber",
-      rating: "⭐⭐⭐⭐⭐",
+        '❝Results were astronomical! Chest, Bicepts, Triceps, robust with waist trimmed down by four inches!❞',
+      name: '- Ron Felber',
+      rating: '⭐⭐⭐⭐⭐',
     },
     {
       testimonial:
-        "❝Just wanted to share a quick note and let you know that you guys do a really good job.❞",
-      name: "- James Boyle",
-      rating: "⭐⭐⭐⭐⭐",
+        '❝Just wanted to share a quick note and let you know that you guys do a really good job.❞',
+      name: '- Mitch K.',
+      rating: '⭐⭐⭐⭐⭐',
     },
     {
       testimonial:
         "❝After working out for 20 years without results, I've finally started to see some after my short time with Edvania!❞",
-      name: "- Tom Miller",
-      rating: "⭐⭐⭐⭐⭐",
+      name: '- Tom Miller',
+      rating: '⭐⭐⭐⭐⭐',
     },
     {
       testimonial:
-        "❝After a quick short yoga session all of the tension and pain in my shoulders went away!❞",
-      name: "- James Boyle",
-      rating: "⭐⭐⭐⭐⭐",
+        '❝After a quick short yoga session all of the tension and pain in my shoulders went away!❞',
+      name: '- James Boyle',
+      rating: '⭐⭐⭐⭐⭐',
     },
   ];
 
   return (
     <Box
       sx={{
-        height: "auto",
-        width: "100%",
-        backgroundColor: "primary.light",
-        display: "flex",
-        flexDirection: "column",
+        height: 'auto',
+        width: '100%',
+        backgroundColor: 'primary.light',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       <Box
         sx={{
-          width: "90%",
-          paddingTop: "50px",
-          paddingBottom: "50px",
-          margin: "auto",
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "primary.light",
+          width: '90%',
+          paddingTop: '50px',
+          paddingBottom: '50px',
+          margin: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundColor: 'primary.light',
         }}
       >
-        {" "}
+        {' '}
         <Box
           sx={{
-            width: "95%",
-            backgroundColor: "primary.light",
-            margin: "auto",
+            width: '95%',
+            backgroundColor: 'primary.light',
+            margin: 'auto',
           }}
         >
           <motion.div
             ref={ref}
             animate={controls}
             variants={squareVariants}
-            initial="hidden"
+            initial='hidden'
           >
             <Typography
               sx={{
-                fontFamily: "Ubuntu",
-                color: "error.main",
-                textAlign: "center",
+                fontFamily: 'Ubuntu',
+                color: 'error.main',
+                textAlign: 'center',
                 fontSize: {
-                  xl: "60px",
-                  lg: "50px",
-                  md: "50px",
-                  sm: "44px",
-                  xs: "23px",
+                  xl: '60px',
+                  lg: '50px',
+                  md: '50px',
+                  sm: '44px',
+                  xs: '23px',
                 },
               }}
             >
@@ -125,17 +125,17 @@ const HomeTestimonial = () => {
             </Typography>
             <Typography
               sx={{
-                fontFamily: "Normal",
-                color: "white",
-                textAlign: "center",
-                paddingBottom: "50px",
-                paddingTop: "15px",
+                fontFamily: 'Normal',
+                color: 'white',
+                textAlign: 'center',
+                paddingBottom: '50px',
+                paddingTop: '15px',
                 fontSize: {
-                  xl: "20px",
-                  lg: "20px",
-                  md: "16px",
-                  sm: "16px",
-                  xs: "16px",
+                  xl: '20px',
+                  lg: '20px',
+                  md: '16px',
+                  sm: '16px',
+                  xs: '16px',
                 },
               }}
             >
@@ -153,14 +153,14 @@ const HomeTestimonial = () => {
         </Box>
         <Box
           sx={{
-            display: "flex",
-            width: "100%",
-            height: "auto",
-            flexDirection: "row",
-            alignItems: "start",
-            justifyContent: "center",
-            gap: "30px",
-            flexWrap: "wrap",
+            display: 'flex',
+            width: '100%',
+            height: 'auto',
+            flexDirection: 'row',
+            alignItems: 'start',
+            justifyContent: 'center',
+            gap: '30px',
+            flexWrap: 'wrap',
           }}
         >
           {beforeAfterTestimonials.map(
@@ -168,123 +168,126 @@ const HomeTestimonial = () => {
               return (
                 <Box
                   sx={{
-                    display: "flex",
-                    flexWrap: "wrap",
+                    display: 'flex',
+                    flexWrap: 'wrap',
                     width: {
-                      xl: "47%",
-                      lg: "47%",
-                      md: "47%",
-                      sm: "90%",
-                      xs: "90%",
+                      xl: '47%',
+                      lg: '47%',
+                      md: '47%',
+                      sm: '90%',
+                      xs: '90%',
                     },
-                    height: "auto",
-                    flexDirection: "row",
-                    alignItems: "start",
-                    justifyContent: "space-between",
-                    marginBottom: "30px",
-                    backgroundColor: "primary.light",
+                    height: 'auto',
+                    flexDirection: 'row',
+                    alignItems: 'start',
+                    justifyContent: 'space-between',
+                    marginBottom: '30px',
+                    backgroundColor: 'primary.light',
                   }}
                 >
                   <Box
                     sx={{
                       width: {
-                        xl: "48.2%",
-                        lg: "47.5%",
-                        md: "48.2%",
-                        sm: "48.2%",
-                        xs: "48.2%",
+                        xl: '48.2%',
+                        lg: '47.5%',
+                        md: '48.2%',
+                        sm: '48.2%',
+                        xs: '48.2%',
                       },
 
                       height: {
-                        xl: "500px",
-                        lg: "300px",
-                        md: "300px",
-                        sm: "300px",
-                        xs: "300px",
+                        xl: '500px',
+                        lg: '300px',
+                        md: '300px',
+                        sm: '300px',
+                        xs: '300px',
                       },
                       backgroundImage: `url(${before})`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "top",
-                      marginBottom: "15px",
-                      borderRadius: "15px",
+                      backgroundRepeat: 'no-repeat',
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'top',
+                      marginBottom: '15px',
+                      borderRadius: '15px',
+                      border: '2px solid white',
                       boxShadow:
-                        "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                        'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
                     }}
                   ></Box>
                   <Box
                     sx={{
                       width: {
-                        xl: "48.2%",
-                        lg: "47.5%",
-                        md: "48.2%",
-                        sm: "48.2%",
-                        xs: "48.2%",
+                        xl: '48.2%',
+                        lg: '47.5%',
+                        md: '48.2%',
+                        sm: '48.2%',
+                        xs: '48.2%',
                       },
                       height: {
-                        xl: "500px",
-                        lg: "300px",
-                        md: "300px",
-                        sm: "300px",
-                        xs: "300px",
+                        xl: '500px',
+                        lg: '300px',
+                        md: '300px',
+                        sm: '300px',
+                        xs: '300px',
                       },
                       backgroundImage: `url(${after})`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "top",
-                      marginBottom: "15px",
-                      borderRadius: "15px",
+                      backgroundRepeat: 'no-repeat',
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'top',
+                      marginBottom: '15px',
+                      borderRadius: '15px',
+                      border: '2px solid white',
                       boxShadow:
-                        "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                        'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
                     }}
                   ></Box>
                   <Box
                     sx={{
-                      width: "100%",
-                      height: "auto",
-                      padding: "10px",
-                      backgroundColor: "primary.dark",
-
-                      borderRadius: "15px",
+                      width: '100%',
+                      height: 'auto',
+                      padding: '10px',
+                      backgroundColor: 'primary.dark',
+                      border: '2px solid gold',
+                      borderRadius: '15px',
                       boxShadow:
-                        "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                        'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
 
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "start",
-                      flexDirection: "column",
-                      gap: "5px",
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'start',
+                      flexDirection: 'column',
+                      gap: '5px',
+                      marginTop: '15px',
                     }}
                   >
                     <Typography
                       sx={{
                         fontSize: {
-                          xl: "20px",
-                          lg: "20px",
-                          md: "16px",
-                          sm: "16px",
-                          xs: "16px",
+                          xl: '20px',
+                          lg: '20px',
+                          md: '16px',
+                          sm: '16px',
+                          xs: '16px',
                         },
-                        fontFamily: "Ubuntu",
-                        color: "white",
+                        fontFamily: 'Ubuntu',
+                        color: 'white',
                       }}
                     >
                       {testimonial}
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "18px",
-                        fontFamily: "Ubuntu",
-                        color: "white",
+                        fontSize: '18px',
+                        fontFamily: 'Ubuntu',
+                        color: 'white',
                       }}
                     >
                       {name}
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "18px",
-                        fontFamily: "Ubuntu",
-                        color: "white",
+                        fontSize: '18px',
+                        fontFamily: 'Ubuntu',
+                        color: 'white',
                       }}
                     >
                       {rating}
@@ -297,15 +300,15 @@ const HomeTestimonial = () => {
         </Box>
         <Box
           sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            width: "100%",
-            height: "auto",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "auto",
-            gap: "30px",
+            display: 'flex',
+            flexWrap: 'wrap',
+            width: '100%',
+            height: 'auto',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: 'auto',
+            gap: '30px',
           }}
         >
           {testimonials.map(({ testimonial, name, rating }) => {
@@ -313,57 +316,57 @@ const HomeTestimonial = () => {
               <Box
                 sx={{
                   width: {
-                    xl: "22.8%",
-                    lg: "22.3%",
-                    md: "45%",
-                    sm: "45%",
-                    xs: "90%",
+                    xl: '22.8%',
+                    lg: '22.3%',
+                    md: '45%',
+                    sm: '45%',
+                    xs: '90%',
                   },
                   height: {
-                    xl: "200px",
-                    lg: "200px",
-                    md: "auto",
-                    sm: "auto",
-                    xs: "auto",
+                    xl: '200px',
+                    lg: '200px',
+                    md: 'auto',
+                    sm: 'auto',
+                    xs: 'auto',
                   },
-                  backgroundColor: "primary.dark",
-                  padding: "15px",
-
-                  borderRadius: "15px",
+                  backgroundColor: 'primary.dark',
+                  padding: '15px',
+                  border: '2px solid gold',
+                  borderRadius: '15px',
                   boxShadow:
-                    "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "start",
-                  flexDirection: "column",
-                  gap: "5px",
+                    'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'start',
+                  flexDirection: 'column',
+                  gap: '5px',
                 }}
               >
                 <Typography
                   sx={{
-                    fontSize: "18px",
-                    fontFamily: "Normal",
-                    color: "white",
+                    fontSize: '18px',
+                    fontFamily: 'Ubuntu',
+                    color: 'white',
                   }}
                 >
                   {testimonial}
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "18px",
-                    fontFamily: "Ubuntu",
-                    color: "white",
+                    fontSize: '18px',
+                    fontFamily: 'Ubuntu',
+                    color: 'white',
                   }}
                 >
                   {name}
                 </Typography>
-                <Typography sx={{ fontSize: "18px", fontFamily: "Ubuntu" }}>
+                <Typography sx={{ fontSize: '18px', fontFamily: 'Ubuntu' }}>
                   {rating}
                 </Typography>
               </Box>
             );
           })}
-          <Button variant="outlined" pill component={Link} to="/about">
+          <Button variant='outlined' pill component={Link} to='/about'>
             Start Today!
           </Button>
         </Box>
