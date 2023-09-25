@@ -16,7 +16,7 @@ const Services = (props) => {
     {
       image: stretching,
       title: "Yoga",
-      price: "FROM $40/WEEK",
+      price: "FROM $20/WEEK",
       plan: "Every journey begins with an initial consultation call, paving the way for a one-week commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
       description:
         "Discover the transformative power of yoga with our dedicated personal trainer. Enhance flexibility, strength, and inner balance while experiencing relaxation, stress relief, and improved overall well-being through our tailored yoga sessions.",
@@ -48,7 +48,7 @@ const Services = (props) => {
     {
       image: food,
       title: "Nutrition",
-      price: "FROM $21/WEEK",
+      price: "FROM $20/WEEK",
       plan: "Every journey begins with an initial consultation call, paving the way for a commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
       description:
         "Transform your health with personalized nutrition planning guided by our expert personal trainer. Optimize your diet, achieve your goals, and unlock your full potential through a tailored approach to fueling your body for success.",

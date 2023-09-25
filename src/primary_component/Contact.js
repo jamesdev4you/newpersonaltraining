@@ -130,7 +130,7 @@ const Contact = (props) => {
                     paddingTop: "30px",
                   }}
                 >
-                  555-555-5555
+                  #727-487-9698
                 </Typography>
               </Box>
               <Box
@@ -159,7 +159,7 @@ const Contact = (props) => {
                 <Typography
                   sx={{ fontSize: "20px", color: "white", paddingTop: "30px" }}
                 >
-                  jamesdev4you@gmail.com
+                  brazilianfitnessus@email.com
                 </Typography>
               </Box>
             </Box>

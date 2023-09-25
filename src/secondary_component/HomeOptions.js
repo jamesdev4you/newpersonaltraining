@@ -117,7 +117,7 @@ const HomeOptions = () => {
               marginBottom: "15px",
             }}
           >
-            Personal Training in Westchase
+            Personal Training in Tampa, FL
           </Typography>
 
           <Typography

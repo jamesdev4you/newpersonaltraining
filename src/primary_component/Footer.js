@@ -152,10 +152,10 @@ export default function Footer() {
             {" "}
             Contact{" "}
           </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> #555-555-5555 </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu" }}> #727-487-9698 </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Yoga@email.com{" "}
+            brazilianfitnessus@email.com{" "}
           </Typography>
         </Box>
         <Box

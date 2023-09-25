@@ -9,30 +9,30 @@ const Calendar = (props) => {
 
   if (props.count === 1) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/nutrition-and-dieting-bronze";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 2) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/nutrition-and-dieting-silver";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 3) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/nutrition-and-dieting-gold";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 4) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/strength-training-bronze";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 5) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/strength-training-silver";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 6) {
-    calendarUrl = "https://calendly.com/petersonedvania/strength-training-gold";
+    calendarUrl = "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 7) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/yoga-and-flexibility-bronze";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 8) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/yoga-and-flexibility-silver";
+      "https://calendly.com/brazilianfitnessus/15min";
   } else if (props.count === 9) {
     calendarUrl =
-      "https://calendly.com/petersonedvania/yoga-and-flexibility-gold";
+      "https://calendly.com/brazilianfitnessus/15min";
   }
 
   return (
