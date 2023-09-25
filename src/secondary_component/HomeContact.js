@@ -78,7 +78,7 @@ export default function HomeContact() {
           justifyContent: "space-evenly",
         }}
       >
-        <Link to="#">
+        <Link href="https://www.instagram.com/petersonedvania/">
           <Box
             sx={{
               height: {
@@ -103,7 +103,7 @@ export default function HomeContact() {
             }}
           ></Box>
         </Link>
-        <Link to="#">
+        <Link href="https://www.instagram.com/petersonedvania/">
           <Box
             sx={{
               height: {
@@ -128,7 +128,7 @@ export default function HomeContact() {
             }}
           ></Box>
         </Link>
-        <Link to="#">
+        <Link href="https://www.instagram.com/petersonedvania/">
           <Box
             sx={{
               height: {
@@ -154,7 +154,7 @@ export default function HomeContact() {
             src="#"
           ></Box>
         </Link>
-        <Link to="#">
+        <Link href="https://www.instagram.com/petersonedvania/">
           <Box
             sx={{
               height: {
@@ -177,7 +177,7 @@ export default function HomeContact() {
               backgroundPosition: "right",
               cursor: "pointer",
             }}
-            src="#"
+            src="https://www.instagram.com/petersonedvania/"
           ></Box>
         </Link>
       </Box>
