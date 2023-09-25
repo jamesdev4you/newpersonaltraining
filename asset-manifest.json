@@ -1,10 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23def904.css",
-    "main.js": "/static/js/main.86eea960.js",
-    "static/media/barbells.jpg": "/static/media/barbells.7309947dc9d9d9da8a24.jpg",
-    "static/media/picture-18.jpg": "/static/media/picture-18.7ddd7c9ab389150a3471.jpg",
-    "static/media/pexels-sam-lion-5709296.jpg": "/static/media/pexels-sam-lion-5709296.bdaa4e1b2244c50dc229.jpg",
+    "main.js": "/static/js/main.a47d67ce.js",
     "static/media/headerAbout.jpg": "/static/media/headerAbout.c4475155529acb7ba838.jpg",
     "static/media/picture-14.jpg": "/static/media/picture-14.b8e4a081065915f6129d.jpg",
     "static/media/picture22.jpg": "/static/media/picture22.edf0a5e3dcd4ed5da118.jpg",
@@ -15,8 +12,11 @@
     "static/media/picture-30.jpg": "/static/media/picture-30.ba0f25c609aa57161605.jpg",
     "static/media/personaltraining.jpg": "/static/media/personaltraining.4276d62af07f671a9059.jpg",
     "static/media/picture-52.jpg": "/static/media/picture-52.bec901f66f19f154ba27.jpg",
+    "static/media/pexels-sam-lion-5709296.jpg": "/static/media/pexels-sam-lion-5709296.777a9c8ed4e9cf359e5d.jpg",
     "static/media/picture-38.jpg": "/static/media/picture-38.5639aedd594ae7597522.jpg",
     "static/media/picture-22.jpg": "/static/media/picture-22.fd4dea265d561b5f4665.jpg",
+    "static/media/barbells.jpg": "/static/media/barbells.e61079b770444de3bedd.jpg",
+    "static/media/picture-18.jpg": "/static/media/picture-18.c5bd81c3e23c72a5119a.jpg",
     "static/media/picture-48.jpg": "/static/media/picture-48.8d93efa93db91a96f0d8.jpg",
     "static/media/tom.png": "/static/media/tom.2d6fefc0391620517cf8.png",
     "static/media/james.jpg": "/static/media/james.3dc20fb115836448e71f.jpg",
@@ -34,10 +34,10 @@
     "static/media/twitter.png": "/static/media/twitter.3a655e8ba8a9efd824c5.png",
     "index.html": "/index.html",
     "main.23def904.css.map": "/static/css/main.23def904.css.map",
-    "main.86eea960.js.map": "/static/js/main.86eea960.js.map"
+    "main.a47d67ce.js.map": "/static/js/main.a47d67ce.js.map"
   },
   "entrypoints": [
     "static/css/main.23def904.css",
-    "static/js/main.86eea960.js"
+    "static/js/main.a47d67ce.js"
   ]
 }
