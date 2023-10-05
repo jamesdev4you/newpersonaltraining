@@ -130,7 +130,9 @@ const Contact = (props) => {
                     paddingTop: "30px",
                   }}
                 >
+                  <a href="tel:7274879698" style={{color: '#FFFFFF', textDecoration: 'none',}}>
                   #727-487-9698
+                  </a>
                 </Typography>
               </Box>
               <Box

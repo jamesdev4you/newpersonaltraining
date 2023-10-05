@@ -110,7 +110,7 @@ export default function Footer() {
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
             <NavLink to="/personaltraining" className="nav_link">
-              Body Building
+              Personal Training
             </NavLink>{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
@@ -152,8 +152,12 @@ export default function Footer() {
             {" "}
             Contact{" "}
           </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}> #727-487-9698 </Typography>
-          <Typography sx={{ fontFamily: "Ubuntu" }}>
+          <Typography sx={{ fontFamily: "Ubuntu" }}> 
+            <a href="tel:7274879698" style={{color: 'black', textDecoration: 'none',}}>
+              #727-487-9698 
+            </a>
+          </Typography>
+          <Typography sx={{ fontFamily: "Ubuntu", color: 'black' }}>
             {" "}
             brazilianfitnessus@email.com{" "}
           </Typography>
@@ -186,31 +190,31 @@ export default function Footer() {
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            M: 10:00am-10:00pm{" "}
+            Mon: 6:00am - 7:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Tu: 10:00am-10:00pm{" "}
+            Tue: 12:00pm-7:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Wed: 10:00am-10:00pm{" "}
+            Wed: 6:00am-7:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Th: 10:00am-10:00pm{" "}
+            Thu: 12:00pm-7:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Fri: 10:00am-10:00pm{" "}
+            Fri: 6:00am-7:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Sat: 10:00am-10:00pm{" "}
+            Sat: 8:00am-6:00pm{" "}
           </Typography>
           <Typography sx={{ fontFamily: "Ubuntu" }}>
             {" "}
-            Sun: 10:00am-10:00pm{" "}
+            Sun: CLOSED{" "}
           </Typography>
         </Box>
       </Box>

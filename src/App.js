@@ -59,10 +59,10 @@ function App() {
       image: HeaderImg,
     },
     {
-      firstSen: "Brazilian Bodybuilder",
-      secondSen: "and personal trainer",
+      firstSen: "Tampa Bay's Finest",
+      secondSen: "personal trainer",
       thirdParagraph:
-        "My expertice in fitness makes your dreams become reality",
+        "My expertice in fitness helps your dreams become reality",
       buttonSen: "Learn More",
       to: "/services",
       image: HeaderAbout,
