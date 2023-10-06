@@ -9,7 +9,7 @@ const nutritionDescriptions = [
   {
     name: "Bronze 🥉",
     color: "#DD9449",
-    price: "$150 - 1 MONTH",
+    price: "$100 - 1 MONTH",
     plan: "Every journey begins with an initial consultation call, paving the way for a commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
     description:
       "Transform your health with personalized nutrition planning guided by our expert personal trainer. Optimize your diet, achieve your goals, and unlock your full potential through a tailored approach to fueling your body for success.",
@@ -25,7 +25,7 @@ const nutritionDescriptions = [
   {
     name: "Silver 🥈",
     color: "#aaa9ad",
-    price: "$200 - 2 MONTHS",
+    price: "$150 - 2 MONTHS",
     plan: "Every journey begins with an initial consultation call, paving the way for a commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
     description:
       "Transform your health with personalized nutrition planning guided by our expert personal trainer. Optimize your diet, achieve your goals, and unlock your full potential through a tailored approach to fueling your body for success.",
@@ -41,7 +41,7 @@ const nutritionDescriptions = [
   {
     name: "Gold 🥇",
     color: "#FFD700",
-    price: "$250 - 3 MONTHS",
+    price: "$200 - 3 MONTHS",
     plan: "Every journey begins with an initial consultation call, paving the way for a commitment tailored to your needs. Upon completion, you'll have the option to extend your commitment for greater savings and continued progress.",
     description:
       "Transform your health with personalized nutrition planning guided by our expert personal trainer. Optimize your diet, achieve your goals, and unlock your full potential through a tailored approach to fueling your body for success.",

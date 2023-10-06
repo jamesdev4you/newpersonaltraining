@@ -35,6 +35,7 @@ const AboutOpening = (props) => {
         justifyContent: "center",
         padding: "100px 0",
       }}
+      ref={ref}
     >
       <Box
         sx={{
@@ -57,7 +58,7 @@ const AboutOpening = (props) => {
         }}
       >
         <motion.div
-          ref={ref}
+          
           animate={controls}
           variants={squareVariants}
           initial="hidden"

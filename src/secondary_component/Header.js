@@ -96,8 +96,9 @@ export default function Header(props) {
           backgroundPosition: "center",
 
           display: "flex",
-          alignItems: "center",
+          alignItems: "end",
           justifyContent: "center",
+          paddingBottom: '250px',
         }}
       >
         <Box
@@ -108,7 +109,7 @@ export default function Header(props) {
               lg: "100%",
               md: "100%",
               sm: "100%",
-              xs: "40%",
+              xs: "35%",
             },
             display: {
               xl: "none",
